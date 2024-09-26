@@ -1,5 +1,15 @@
+section.banners-home {
+  background: dodgerblue;
+}
+
 header {
   background: red;
+}
+
+footer {
+  background: forestgreen;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
