@@ -1,4 +1,7 @@
 $(document).ready(function () {
-    // index.js import
-    $.getScript("/website/js/paginas/index.js");
+    switch (pagina) {
+        case 'inicial':
+            $.getScript("/website/js/paginas/index.js");
+            break;
+    }
 });

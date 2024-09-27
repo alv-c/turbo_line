@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    alert('Olá mundo index');
+    // alert('Olá mundo index');
 });

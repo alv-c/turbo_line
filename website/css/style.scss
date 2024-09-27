@@ -1,16 +1,303 @@
 @import './paginas/index.scss';
 
+// GERAL =================================
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+// FONTS =================================
+// .poppins-thin {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+// .poppins-extralight {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 200;
+//     font-style: normal;
+// }
+
+// .poppins-light {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// .poppins-regular {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// .poppins-medium {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+// .poppins-semibold {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+// .poppins-bold {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 700;
+//     font-style: normal;
+// }
+
+// .poppins-extrabold {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 800;
+//     font-style: normal;
+// }
+
+// .poppins-black {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 900;
+//     font-style: normal;
+// }
+
+// .poppins-thin-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 100;
+//     font-style: italic;
+// }
+
+// .poppins-extralight-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 200;
+//     font-style: italic;
+// }
+
+// .poppins-light-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 300;
+//     font-style: italic;
+// }
+
+// .poppins-regular-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 400;
+//     font-style: italic;
+// }
+
+// .poppins-medium-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 500;
+//     font-style: italic;
+// }
+
+// .poppins-semibold-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 600;
+//     font-style: italic;
+// }
+
+// .poppins-bold-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 700;
+//     font-style: italic;
+// }
+
+// .poppins-extrabold-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 800;
+//     font-style: italic;
+// }
+
+// .poppins-black-italic {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 900;
+//     font-style: italic;
+// }
+
 header {
-    background: red;
+    nav#navbar {
+        background: #fff !important;
+        padding: 15px 0 !important;
+
+        border: 2px solid red;
+
+        >.container {
+            // btn toogle
+            .menu {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                padding: 0;
+            }
+
+            .line {
+                fill: none;
+                stroke: black;
+                stroke-width: 6;
+                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .line1 {
+                stroke-dasharray: 60 207;
+                stroke-width: 6;
+            }
+
+            .line2 {
+                stroke-dasharray: 60 60;
+                stroke-width: 6;
+            }
+
+            .line3 {
+                stroke-dasharray: 60 207;
+                stroke-width: 6;
+            }
+
+            .opened .line1 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+            }
+
+            .opened .line2 {
+                stroke-dasharray: 1 60;
+                stroke-dashoffset: -30;
+                stroke-width: 6;
+            }
+
+            .opened .line3 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+            }
+            // end btn toogle
+
+            >div#contain-nav-buttons {
+                >ul.navbar-nav {
+                    @media(min-width: 1200px) {
+                        gap: 15px;
+                    }
+
+                    >li.nav-item {
+                        >a.nav-link {
+                            position: relative;
+                            padding-left: 0 !important;
+                            padding-right: 0 !important;
+                            padding: 24px 12px !important;
+                            color: #000;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22.5px;
+
+                            &.active {
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    top: calc(50% + 15px);
+                                    width: 16px;
+                                    height: 2px;
+                                    background-color: #F58220;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >form#contain-right-btns-nav {
+                    @media(min-width: 992px) {
+                        gap: 18px;
+                        margin-left: 18px;
+                    }
+
+                    >button.btn-nav-right {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 12px 28px;
+                        border-radius: 12px;
+
+                        span {
+                            display: block;
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+
+                        &#area-cliente {
+                            border: 1px solid #000;
+                            background: rgba(255, 255, 255, 0.00);
+                            color: #000;
+                        }
+
+                        &#assinar-agr {
+                            border: 1px solid transparent;
+                            background: #F58220;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer {
-    background: forestgreen;
+    // background: forestgreen;
     margin: 0;
     padding: 0;
 }
 
 //container padrao
 .container {
-    
+    padding: 0 !important;
+    max-width: 310px;
+
+    @media (min-width: 400px) {
+        max-width: 350px;
+    }
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1300px) {
+        max-width: 1216px !important;
+    }
+}
+
+//container centro - direita
+.container-center-right {
+    background: forestgreen;
+
+    @media (min-width: 992px) {
+        max-width: calc((100% - 960px) / 2 + 960px) !important;
+        margin-right: 0 !important;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: calc((100% - 1140px) / 2 + 1140px) !important;
+    }
+
+    @media (min-width: 1300px) {
+        max-width: calc((100% - 1216px) / 2 + 1216px) !important;
+    }
 }
