@@ -5,6 +5,23 @@
     font-family: "Poppins", sans-serif;
 }
 
+// scroll custom
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F58220;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #003DA6;
+}
+
 // FONTS =================================
 // .poppins-thin {
 //     font-family: "Poppins", sans-serif;
@@ -117,64 +134,101 @@
 header {
     nav#navbar {
         background: #fff !important;
-        padding: 15px 0 !important;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        transition: padding .5s;
 
-        border: 2px solid red;
+        // @media(max-width: 991.9px) {
+        //     height: 700px;
+        //     overflow-y: scroll;
+        //     padding-bottom: 50px;
+        // }
 
         >.container {
-            // btn toogle
             .menu {
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
                 display: flex;
                 padding: 0;
-            }
+                outline: none;
 
-            .line {
-                fill: none;
-                stroke: black;
-                stroke-width: 6;
-                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
+                @media(min-width: 992px) {
+                    display: none;
+                }
 
-            .line1 {
-                stroke-dasharray: 60 207;
-                stroke-width: 6;
-            }
+                .line {
+                    fill: none;
+                    stroke: black;
+                    stroke-width: 6;
+                    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            .line2 {
-                stroke-dasharray: 60 60;
-                stroke-width: 6;
-            }
+                    &.line1 {
+                        stroke-dasharray: 60 207;
+                        stroke-width: 6;
+                    }
 
-            .line3 {
-                stroke-dasharray: 60 207;
-                stroke-width: 6;
-            }
+                    &.line2 {
+                        stroke-dasharray: 60 60;
+                        stroke-width: 6;
+                    }
 
-            .opened .line1 {
-                stroke-dasharray: 90 207;
-                stroke-dashoffset: -134;
-                stroke-width: 6;
-            }
+                    &.line3 {
+                        stroke-dasharray: 60 207;
+                        stroke-width: 6;
+                    }
+                }
 
-            .opened .line2 {
-                stroke-dasharray: 1 60;
-                stroke-dashoffset: -30;
-                stroke-width: 6;
-            }
+                &.opened .line1 {
+                    stroke-dasharray: 90 207;
+                    stroke-dashoffset: -134;
+                    stroke-width: 6;
+                }
 
-            .opened .line3 {
-                stroke-dasharray: 90 207;
-                stroke-dashoffset: -134;
-                stroke-width: 6;
+                &.opened .line2 {
+                    stroke-dasharray: 1 60;
+                    stroke-dashoffset: -30;
+                    stroke-width: 6;
+                }
+
+                &.opened .line3 {
+                    stroke-dasharray: 90 207;
+                    stroke-dashoffset: -134;
+                    stroke-width: 6;
+                }
             }
-            // end btn toogle
 
             >div#contain-nav-buttons {
+                /* Estiliza o fundo da barra de rolagem */
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                }
+
+                /* Estiliza o polegar da barra de rolagem (a parte que se move) */
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent;
+                }
+
+                /* Alterar a cor do polegar quando está sendo "hovered" */
+                &::-webkit-scrollbar-thumb:hover {
+                    background-color: transparent;
+                }
+
+                &.show {
+                    height: 100dvh;
+                    max-height: 100dvh;
+                    padding-bottom: 150px;
+                }
+
                 >ul.navbar-nav {
+                    @media(max-width: 991.9px) {
+                        padding-bottom: 20px;
+                    }
+
                     @media(min-width: 1200px) {
                         gap: 15px;
                     }
@@ -190,6 +244,11 @@ header {
                             font-style: normal;
                             font-weight: 500;
                             line-height: 22.5px;
+
+                            @media(max-width: 991.9px) {
+                                display: block;
+                                text-align: center;
+                            }
 
                             &.active {
                                 &::after {
@@ -210,6 +269,10 @@ header {
                 }
 
                 >form#contain-right-btns-nav {
+                    @media(max-width: 991.9px) {
+                        flex-direction: column;
+                    }
+
                     @media(min-width: 992px) {
                         gap: 18px;
                         margin-left: 18px;
@@ -226,6 +289,11 @@ header {
                         padding: 12px 28px;
                         border-radius: 12px;
 
+                        @media(max-width: 991.9px) {
+                            width: 100%;
+                            max-width: 300px;
+                        }
+
                         span {
                             display: block;
                             font-size: 13px;
@@ -238,6 +306,10 @@ header {
                             border: 1px solid #000;
                             background: rgba(255, 255, 255, 0.00);
                             color: #000;
+
+                            @media(max-width: 991.9px) {
+                                margin-bottom: 18px;
+                            }
                         }
 
                         &#assinar-agr {
