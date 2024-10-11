@@ -656,6 +656,12 @@ section.quem-somos-home div.top > div.col-right > div.contain-btns > a.saiba-mai
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  section.quem-somos-home div.top > div.col-right > div.contain-btns > a.saiba-mais {
+    width: auto;
+  }
 }
 section.quem-somos-home div.top > div.col-right > div.contain-btns > a.fale-conosco {
   display: flex;
@@ -664,6 +670,12 @@ section.quem-somos-home div.top > div.col-right > div.contain-btns > a.fale-cono
   align-items: center;
   gap: 8px;
   background: transparent;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  section.quem-somos-home div.top > div.col-right > div.contain-btns > a.fale-conosco {
+    width: auto;
+  }
 }
 section.quem-somos-home div.top > div.col-right > div.contain-btns > a.fale-conosco > div.ico {
   display: flex;
@@ -756,7 +768,6 @@ section.link-dedicado-home {
   }
 }
 section.link-dedicado-home div.grid {
-  border: 2px solid lime;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -817,36 +828,65 @@ section.link-dedicado-home div.grid > div.left > div.grid-cards {
   justify-content: space-between;
   align-items: stretch;
   padding-top: 30px;
-  gap: 35px;
+  gap: 10px;
 }
 @media (min-width: 768px) {
   section.link-dedicado-home div.grid > div.left > div.grid-cards {
     padding-top: 40px;
   }
 }
-section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link {
-  border: 2px solid dodgerblue;
+@media (min-width: 992px) {
+  section.link-dedicado-home div.grid > div.left > div.grid-cards {
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  section.link-dedicado-home div.grid > div.left > div.grid-cards {
+    max-width: 480px;
+  }
+}
+section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 15px;
 }
-section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link > div.ico {
+section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  height: 70px;
+  min-height: 70px !important;
+  max-height: 70px !important;
 }
-section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link > span {
+section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
   display: block;
   color: #003DA6;
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 19.5px;
+}
+@media (min-width: 400px) {
+  section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
+    font-size: 11px;
+  }
+}
+@media (min-width: 992px) {
+  section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1200px) {
+  section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
+    font-size: 15px;
+  }
 }
 section.link-dedicado-home div.grid > div.left > div.contain-btns {
   display: flex;
@@ -902,12 +942,27 @@ section.link-dedicado-home div.grid > div.left > div.contain-btns > a.ver-oferta
   letter-spacing: 0.7px;
   text-decoration-line: underline;
 }
-section.link-dedicado-home div.grid > div.right {
-  border: 2px solid cyan;
-}
 @media (min-width: 768px) {
   section.link-dedicado-home div.grid > div.right {
     order: 1;
+  }
+}
+section.link-dedicado-home div.grid > div.right > img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  section.link-dedicado-home div.grid > div.right > img {
+    position: relative;
+    bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  section.link-dedicado-home div.grid > div.right > img {
+    bottom: 80px;
   }
 }
 
