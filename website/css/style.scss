@@ -357,12 +357,28 @@ footer {
 }
 
 //container centro - direita
-.container-center-right {
-    background: forestgreen;
+.container-center-left {
+    width: 100%;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 400px) {
+        max-width: 350px;
+    }
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
 
     @media (min-width: 992px) {
         max-width: calc((100% - 960px) / 2 + 960px) !important;
-        margin-right: 0 !important;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     @media (min-width: 1200px) {

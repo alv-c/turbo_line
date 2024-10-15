@@ -6,32 +6,37 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
 
 <section class="banners-home">
     <div class="aligner">
-        <div class="owl-carousel owl-theme">
-            <a href="#" class="item">
-                <!-- desktop -->
-                <img src="/website/img/index/banner_1.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
-                <!-- mobille -->
-                <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
-            </a>
-            <a href="#" class="item">
-                <!-- desktop -->
-                <img src="/website/img/index/banner_2.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
-                <!-- mobille -->
-                <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
-            </a>
-            <a href="#" class="item">
-                <!-- desktop -->
-                <img src="/website/img/index/banner_3.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
-                <!-- mobille -->
-                <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
-            </a>
+        <div id="carousel-banners" class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="#">
+                    <!-- desktop -->
+                    <img src="/website/img/index/banner_1.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
+                    <!-- mobille -->
+                    <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <!-- desktop -->
+                    <img src="/website/img/index/banner_2.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
+                    <!-- mobille -->
+                    <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <!-- desktop -->
+                    <img src="/website/img/index/banner_3.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
+                    <!-- mobille -->
+                    <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
+                </a>
+            </div>
         </div>
         <div class="owl-dots">
             <button role="button" class="owl-dot"></button>
             <button role="button" class="owl-dot active"></button>
             <button role="button" class="owl-dot"></button>
         </div>
-
     </div>
 </section>
 <section class="ofertas-home">
@@ -51,7 +56,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             </button>
         </div>
         <div class="contain-cards-ofertas">
-
             <div class="coluna">
                 <div class="card-oferta">
                     <div class="header-card">
@@ -110,7 +114,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     </div>
                 </div>
             </div>
-
             <div class="coluna">
                 <div class="card-oferta oferta">
                     <div class="header-card">
@@ -169,7 +172,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     </div>
                 </div>
             </div>
-
             <div class="coluna">
                 <div class="card-oferta mais-vendido">
                     <div class="header-card">
@@ -228,7 +230,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="contain-ver-mais">
             <button type="button" class="btn-ver-mais">
@@ -303,7 +304,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     Fibra óptica de última geração para entregar máxima performance.
                 </span>
             </div>
-
             <div class="card-inst">
                 <div class="ico">
                     <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +328,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     Suporte dedicado e 100% voltado à sua satisfação.
                 </span>
             </div>
-
             <div class="card-inst">
                 <div class="ico">
                     <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,7 +355,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-
 <section class="link-dedicado-home">
     <div class="container">
         <div class="grid">
@@ -397,7 +395,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </div>
                         <span>Velocidade <br> simétrica</span>
                     </div>
-
                     <div class="card-link-dedicado">
                         <div class="ico">
                             <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -419,7 +416,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </div>
                         <span>Conexão estável e <br> sem interrupções</span>
                     </div>
-
                     <div class="card-link-dedicado">
                         <div class="ico">
                             <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -470,6 +466,157 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 <img src="/website/img/index/img-link-ded.png" alt="Link dedicado TurboLine">
             </div>
         </div>
+    </div>
+</section>
+<section class="beneficios-home">
+    <div class="container">
+        <span class="titulo">
+            A Internet que Transforma Sua Conexão em <strong>Alta Performance</strong>
+        </span>
+        <span class="desc">
+            A TurboLine oferece internet de fibra óptica de última geração, preparada para todas as suas atividades online.
+        </span>
+        <div class="contain-card-benef">
+            <div class="card-benef">
+                <div class="top">
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                            <rect width="51" height="51" rx="11.3333" fill="#F58220" />
+                            <mask id="mask0_1939_2257" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="32" height="32">
+                                <rect x="9.06689" y="9.06689" width="31.7333" height="31.7333" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M14.3559 35.5115C13.6286 35.5115 13.0061 35.2526 12.4882 34.7347C11.9704 34.2168 11.7114 33.5943 11.7114 32.8671V17.0004C11.7114 16.2732 11.9704 15.6506 12.4882 15.1328C13.0061 14.6149 13.6286 14.356 14.3559 14.356H35.5114C36.2386 14.356 36.8612 14.6149 37.3791 15.1328C37.8969 15.6506 38.1559 16.2732 38.1559 17.0004V32.8671C38.1559 33.5943 37.8969 34.2168 37.3791 34.7347C36.8612 35.2526 36.2386 35.5115 35.5114 35.5115H14.3559ZM14.3559 19.6448H35.5114V17.0004H14.3559V19.6448ZM23.5453 30.9498L31.0159 23.4793L29.0986 21.5621L23.5453 27.1154L20.7686 24.3387L18.8514 26.256L23.5453 30.9498Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <span>
+                        Navegação ultrarrápida e sempre estável
+                    </span>
+                </div>
+                <div class="bottom">
+                    <span class="desc">
+                        Experimente a verdadeira potência da internet. Nossa fibra óptica entrega até
+                        1Gbps de velocidade, oferecendo uma conexão estável para toda a família, sem
+                        quedas ou lentidão.
+                    </span>
+                </div>
+            </div>
+            <div class="card-benef">
+                <div class="top">
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewBox="0 0 52 51" fill="none">
+                            <rect x="0.333496" width="51" height="51" rx="11.3333" fill="#F58220" />
+                            <mask id="mask0_1939_1051" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="33" height="32">
+                                <rect x="9.40039" y="9.06689" width="31.7333" height="31.7333" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M19.9783 32.867C19.251 32.867 18.6285 32.608 18.1106 32.0902C17.5927 31.5723 17.3338 30.9498 17.3338 30.2225V14.3559C17.3338 13.6286 17.5927 13.0061 18.1106 12.4882C18.6285 11.9704 19.251 11.7114 19.9783 11.7114H35.8449C36.5721 11.7114 37.1947 11.9704 37.7126 12.4882C38.2304 13.0061 38.4894 13.6286 38.4894 14.3559V30.2225C38.4894 30.9498 38.2304 31.5723 37.7126 32.0902C37.1947 32.608 36.5721 32.867 35.8449 32.867H19.9783ZM19.9783 17.0003H35.8449V14.3559H19.9783V17.0003ZM14.6894 38.1559C13.9621 38.1559 13.3396 37.8969 12.8217 37.3791C12.3039 36.8612 12.0449 36.2386 12.0449 35.5114V17.0003H14.6894V35.5114H33.2005V38.1559H14.6894Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <span>
+                        Planos versáteis para cada estilo de vida
+                    </span>
+                </div>
+                <div class="bottom">
+                    <span class="desc">
+                        Seja para quem precisa de uma navegação básica ou para quem exige máxima performance,
+                        oferecemos planos que atendem a todos os perfis.
+                    </span>
+                </div>
+            </div>
+            <div class="card-benef">
+                <div class="top">
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewBox="0 0 52 51" fill="none">
+                            <rect x="0.666504" width="51" height="51" rx="11.3333" fill="#F58220" />
+                            <mask id="mask0_1939_1062" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="33" height="32">
+                                <rect x="9.7334" y="9.06689" width="31.7333" height="31.7333" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M12.5101 23.7437L9.7334 20.9671C11.8269 18.8295 14.2455 17.1932 16.9891 16.0583C19.7327 14.9234 22.603 14.356 25.6001 14.356C26.129 14.356 26.6578 14.3725 27.1867 14.4055C27.7156 14.4386 28.2445 14.4882 28.7734 14.5543L26.7901 18.3887C26.5917 18.3667 26.3934 18.3502 26.1951 18.3392C25.9967 18.3281 25.7984 18.3226 25.6001 18.3226C23.1319 18.3226 20.7684 18.7909 18.5096 19.7275C16.2509 20.6641 14.251 22.0028 12.5101 23.7437ZM18.1295 29.3632L15.3528 26.5204C16.609 25.2643 18.0524 24.2836 19.6831 23.5785C21.3139 22.8733 23.0217 22.4656 24.8067 22.3554L22.6912 26.6857C21.8317 26.9281 21.0164 27.2752 20.2451 27.7269C19.4738 28.1787 18.7686 28.7241 18.1295 29.3632ZM24.6745 35.3132C23.9473 35.0708 23.4184 34.6135 23.0878 33.9414C22.7573 33.2692 22.7573 32.6026 23.0878 31.9415L31.0212 15.8104C31.1093 15.6341 31.2415 15.5184 31.4178 15.4633C31.5941 15.4082 31.7704 15.4137 31.9467 15.4798C32.123 15.546 32.2553 15.6617 32.3434 15.8269C32.4315 15.9922 32.4536 16.163 32.4095 16.3393L28.1123 33.7265C27.936 34.4537 27.5008 34.9716 26.8066 35.2801C26.1124 35.5886 25.4017 35.5997 24.6745 35.3132ZM33.0706 29.3632C32.9164 29.2089 32.7676 29.0712 32.6244 28.95C32.4811 28.8288 32.3214 28.7021 32.1451 28.5698L33.2028 24.4379C33.6656 24.7464 34.1229 25.0715 34.5746 25.413C35.0264 25.7546 35.4506 26.1237 35.8473 26.5204L33.0706 29.3632ZM38.657 23.7768C37.9518 23.1377 37.2301 22.5317 36.4919 21.9587C35.7536 21.3858 34.9658 20.8789 34.1284 20.4382L35.054 16.4715C36.244 17.0445 37.3789 17.7056 38.4587 18.4548C39.5385 19.2041 40.5412 20.0415 41.4667 20.9671L38.657 23.7768Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <span>
+                        Teste a velocidade e descubra o máximo da sua conexão
+                    </span>
+                </div>
+                <div class="bottom">
+                    <span class="desc">
+                        Faça um teste de velocidade e confira seus resultados em tempo real, incluindo
+                        upload, download e latência, para garantir que você está aproveitando ao
+                        máximo seu plano.
+                    </span>
+                </div>
+            </div>
+            <div class="card-benef">
+                <div class="top">
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                            <rect width="51" height="51" rx="11.3333" fill="#F58220" />
+                            <mask id="mask0_1939_1073" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="32" height="32">
+                                <rect x="9.06689" y="9.06689" width="31.7333" height="31.7333" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M24.9338 38.1559C22.5979 38.1559 20.6916 37.7868 19.2152 37.0485C17.7387 36.3103 17.0004 35.3572 17.0004 34.1892C17.0004 33.6603 17.1602 33.17 17.4798 32.7182C17.7993 32.2665 18.2455 31.8753 18.8185 31.5448L20.901 33.495C20.7027 33.5832 20.4878 33.6824 20.2564 33.7925C20.025 33.9027 19.8432 34.0349 19.711 34.1892C19.9975 34.5418 20.6586 34.8503 21.6943 35.1148C22.7301 35.3792 23.8099 35.5114 24.9338 35.5114C26.0577 35.5114 27.143 35.3792 28.1898 35.1148C29.2365 34.8503 29.9031 34.5418 30.1896 34.1892C30.0354 34.0129 29.837 33.8697 29.5946 33.7595C29.3522 33.6493 29.1208 33.5501 28.9004 33.462L30.9499 31.4786C31.5669 31.8312 32.0407 32.2334 32.3713 32.6852C32.7018 33.1369 32.8671 33.6383 32.8671 34.1892C32.8671 35.3572 32.1289 36.3103 30.6524 37.0485C29.1759 37.7868 27.2697 38.1559 24.9338 38.1559ZM24.9338 34.1892C21.8266 31.8974 19.5072 29.6716 17.9756 27.512C16.444 25.3524 15.6782 23.2368 15.6782 21.1653C15.6782 19.6007 15.9592 18.2289 16.5211 17.0499C17.0831 15.8709 17.8048 14.8848 18.6863 14.0914C19.5678 13.2981 20.5594 12.7031 21.6613 12.3064C22.7631 11.9098 23.854 11.7114 24.9338 11.7114C26.0136 11.7114 27.1044 11.9098 28.2063 12.3064C29.3081 12.7031 30.2998 13.2981 31.1813 14.0914C32.0628 14.8848 32.7845 15.8709 33.3464 17.0499C33.9084 18.2289 34.1893 19.6007 34.1893 21.1653C34.1893 23.2368 33.4235 25.3524 31.892 27.512C30.3604 29.6716 28.041 31.8974 24.9338 34.1892ZM24.9338 23.6114C25.661 23.6114 26.2835 23.3525 26.8014 22.8346C27.3193 22.3168 27.5782 21.6942 27.5782 20.967C27.5782 20.2398 27.3193 19.6172 26.8014 19.0993C26.2835 18.5815 25.661 18.3225 24.9338 18.3225C24.2066 18.3225 23.584 18.5815 23.0661 19.0993C22.5483 19.6172 22.2893 20.2398 22.2893 20.967C22.2893 21.6942 22.5483 22.3168 23.0661 22.8346C23.584 23.3525 24.2066 23.6114 24.9338 23.6114Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <span>
+                        Verifique a disponibilidade na sua região
+                    </span>
+                </div>
+                <div class="bottom">
+                    <span class="desc">
+                        Estamos sempre expandindo sua cobertura para conectar mais lares e empresas com a
+                        melhor internet. Consulte a disponibilidade da nossa fibra óptica no seu CEP e
+                        seja bem-vindo à era da ultra velocidade!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clientes-home">
+    <div class="container-center-left">
+        <span class="titulo">
+            Clientes <strong>Satisfeitos</strong>
+        </span>
+        <span class="subtitulo">
+            Ouça o que <strong>nossos clientes</strong> têm a dizer sobre a experiência de navegar com TurboLine:
+        </span>
+
+
+        <div id="carousel-clientes" class="owl-carousel owl-theme">
+
+            <div class="item">
+                <div class="item-cliente">
+                    <div class="top">
+                        <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                        <span class="desc-item">
+                            Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
+                            placerat pulvinar at aliquam mattis adipiscing sed.
+                        </span>
+                    </div>
+                    <div class="bottom">
+                        <div class="ico">
+                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                            </svg>
+                        </div>
+                        <div class="right">
+                            <span class="titulo">Lorem ipsum </span>
+                            <span class="subtitulo">Gerente de vendas </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 

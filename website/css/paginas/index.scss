@@ -9,16 +9,18 @@ section {
             justify-content: center;
             position: relative;
 
-            .owl-item {
-                .item {
-                    display: block;
-                    text-decoration: none;
-
-                    >img {
+            .owl-carousel {
+                div.item {
+                    a {
                         display: block;
-                        margin: 0 auto;
                         width: 100%;
-                        object-fit: cover;
+
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                            width: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
@@ -65,28 +67,8 @@ section {
                     pointer-events: all;
 
                     &:hover {
-                        background: none;
+                        background: none !important;
                     }
-                }
-            }
-
-            .contain-btns-banner {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                z-index: 1;
-                margin-left: auto;
-                margin-right: auto;
-                pointer-events: none;
-                border: 2px solid red;
-
-                >a {
-                    pointer-events: all;
-                }
-
-                >button {
-                    pointer-events: all;
                 }
             }
 
@@ -1072,6 +1054,206 @@ section {
                         @media(min-width: 1200px) {
                             bottom: 80px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    &.beneficios-home {
+        background: url('/website/img/index/bg-beneficios-mobille.png') no-repeat center center;
+        background-size: 100% 100%;
+        padding: 55px 0 50px;
+
+        @media (min-width: 576px) {
+            background: url('/website/img/index/bg-beneficios-desktop.png') no-repeat center center;
+            padding: 90px 0;
+            background-size: cover;
+        }
+
+        span {
+            display: block;
+            color: #FFF;
+            font-style: normal;
+            width: 100%;
+
+            @media (min-width: 576px) {
+                max-width: 650px;
+            }
+
+            &.titulo {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 33.8px;
+                padding-bottom: 12px;
+
+                @media (min-width: 576px) {
+                    font-size: 30px;
+                    line-height: 39px;
+                }
+            }
+
+            &.desc {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25.6px;
+                padding-bottom: 35px;
+            }
+        }
+
+        div.contain-card-benef {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 35px;
+            justify-items: center;
+
+            @media (min-width: 576px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (min-width: 768px) {
+                gap: 45px;
+            }
+
+            @media (min-width: 992px) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+            }
+
+            @media (min-width: 1200px) {
+                gap: 65px;
+            }
+
+            @media (min-width: 1300px) {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+            }
+
+            >div.card-benef {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 15px;
+                border-radius: 19px;
+                background: #FFF;
+                box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
+                padding: 30px 25px;
+                width: 100%;
+                max-width: 310px;
+
+                @media (min-width: 576px) {
+                    padding: 25px;
+                    max-width: 100%;
+                }
+
+                >div {
+                    &.top {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        gap: 15px;
+                        padding-bottom: 15px;
+                        height: 80px;
+
+                        >div.ico {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        >span {
+                            display: block;
+                            color: #000;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 20.8px;
+
+                            @media (min-width: 576px) {
+                                font-size: 12.5px;
+                            }
+
+                            @media (min-width: 768px) {
+                                font-size: 16px;
+                            }
+
+                            @media (min-width: 1300px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    &.bottom {
+                        span.desc {
+                            display: block;
+                            color: #000;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+
+                            @media (min-width: 576px) {
+                                font-size: 12.5px;
+                            }
+
+                            @media (min-width: 768px) {
+                                font-size: 16px;
+                            }
+
+                            @media (min-width: 1300px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.clientes-home {
+        border: 2px solid cyan;
+        padding: 55px 0 100px;
+        background: #F7F8FA;
+
+        @media (min-width: 768px) {
+            padding: 135px 0;
+        }
+
+        .container-center-left {
+            >span {
+                display: block;
+                color: #000;
+                font-style: normal;
+                font-weight: 400;
+
+                &.titulo {
+                    font-size: 30px;
+                    line-height: 39px;
+                    padding-bottom: 15px;
+                }
+
+                &.subtitulo {
+                    font-size: 16px;
+                    line-height: 25.6px;
+                    padding-bottom: 50px;
+
+                    @media (min-width: 576px) {
+                        padding-bottom: 35px;
+                    }
+                }
+            }
+
+            >div#carousel-clientes {
+                border: 2px solid cyan;
+
+                .item {
+                    border: 2px solid red;
+
+                    >div.item-cliente {
+                        border: 2px solid lime;
                     }
                 }
             }
