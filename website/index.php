@@ -579,44 +579,176 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-
 <section class="clientes-home">
     <div class="container-center-left">
-        <span class="titulo">
-            Clientes <strong>Satisfeitos</strong>
-        </span>
-        <span class="subtitulo">
-            Ouça o que <strong>nossos clientes</strong> têm a dizer sobre a experiência de navegar com TurboLine:
-        </span>
-
-
-        <div id="carousel-clientes" class="owl-carousel owl-theme">
-
-            <div class="item">
-                <div class="item-cliente">
-                    <div class="top">
-                        <span class="titulo-item">Lorem ipsum dolor sit amet</span>
-                        <span class="desc-item">
-                            Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
-                            placerat pulvinar at aliquam mattis adipiscing sed.
-                        </span>
-                    </div>
-                    <div class="bottom">
-                        <div class="ico">
-                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
-                            </svg>
-                        </div>
-                        <div class="right">
-                            <span class="titulo">Lorem ipsum </span>
-                            <span class="subtitulo">Gerente de vendas </span>
-                        </div>
-                    </div>
+        <div class="contain-top container">
+            <div class="top-left">
+                <span class="titulo">
+                    Clientes <strong>Satisfeitos</strong>
+                </span>
+                <span class="subtitulo">
+                    Ouça o que <strong>nossos clientes</strong> têm a dizer sobre a experiência de navegar com TurboLine:
+                </span>
+            </div>
+            <div class="top-right">
+                <div class="custom-nav desktop">
+                    <button type="button" class="custom-prev">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="45" height="45" rx="8" fill="#003DA6" />
+                            <mask id="mask0_1939_1641" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="24" height="24">
+                                <rect x="35" y="35" width="24" height="24" transform="rotate(-180 35 35)" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M21 17L22.4 18.45L18.85 22L31 22L31 24L18.85 24L22.4 27.55L21 29L15 23L21 17Z" fill="white" />
+                            </g>
+                        </svg>
+                    </button>
+                    <button type="button" class="custom-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                            <rect width="45" height="45" rx="8" fill="#003DA6" />
+                            <mask id="mask0_1939_1142" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="24" height="24">
+                                <rect x="11" y="11" width="24" height="24" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M25 29L23.6 27.55L27.15 24H15V22H27.15L23.6 18.45L25 17L31 23L25 29Z" fill="white" />
+                            </g>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
+        <div id="carousel-clientes" class="owl-carousel owl-theme">
 
+            <div class="item-cliente">
+                <div class="top">
+                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <span class="desc-item">
+                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
+                        placerat pulvinar at aliquam mattis adipiscing sed.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Lorem ipsum </span>
+                        <span class="subtitulo">Gerente de vendas </span>
+                    </div>
+                </div>
+            </div>
 
+            <div class="item-cliente">
+                <div class="top">
+                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <span class="desc-item">
+                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
+                        placerat pulvinar at aliquam mattis adipiscing sed.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Lorem ipsum </span>
+                        <span class="subtitulo">Gerente de vendas </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <span class="desc-item">
+                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
+                        placerat pulvinar at aliquam mattis adipiscing sed.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Lorem ipsum </span>
+                        <span class="subtitulo">Gerente de vendas </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <span class="desc-item">
+                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
+                        placerat pulvinar at aliquam mattis adipiscing sed.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Lorem ipsum </span>
+                        <span class="subtitulo">Gerente de vendas </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <span class="desc-item">
+                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
+                        placerat pulvinar at aliquam mattis adipiscing sed.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Lorem ipsum </span>
+                        <span class="subtitulo">Gerente de vendas </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="custom-nav mobille">
+            <button class="custom-prev">
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" rx="8" fill="#003DA6" />
+                    <mask id="mask0_1939_1641" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="24" height="24">
+                        <rect x="35" y="35" width="24" height="24" transform="rotate(-180 35 35)" fill="#D9D9D9" />
+                    </mask>
+                    <g>
+                        <path d="M21 17L22.4 18.45L18.85 22L31 22L31 24L18.85 24L22.4 27.55L21 29L15 23L21 17Z" fill="white" />
+                    </g>
+                </svg>
+            </button>
+            <button class="custom-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                    <rect width="45" height="45" rx="8" fill="#003DA6" />
+                    <mask id="mask0_1939_1142" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="24" height="24">
+                        <rect x="11" y="11" width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g>
+                        <path d="M25 29L23.6 27.55L27.15 24H15V22H27.15L23.6 18.45L25 17L31 23L25 29Z" fill="white" />
+                    </g>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>
 

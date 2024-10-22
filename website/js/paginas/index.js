@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(function () {
-        var owl = $("#carousel-banners");
+        let owl = $("#carousel-banners");
         owl.owlCarousel({
             items: 1,
             margin: 10,
@@ -29,12 +29,40 @@ $(document).ready(function () {
     });
 
     $(function () {
-        var owl = $("#carousel-clientes");
+        let owl = $("#carousel-clientes");
         owl.owlCarousel({
             items: 1,
             margin: 0,
             loop: true,
-            nav: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+                1000: {
+                    items: 4,
+                },
+                1300: {
+                    items: 5,
+                }
+            }
+        });
+
+        $('.custom-next').click(function () {
+            owl.trigger('next.owl.carousel');
+        });
+
+        $('.custom-prev').click(function () {
+            owl.trigger('prev.owl.carousel');
         });
     });
 });
