@@ -3,15 +3,11 @@ $(document).ready(function () {
         case 'inicial':
             $.getScript("/website/js/paginas/index.js");
             break;
+        
+        case 'Institucional':
+            $.getScript("/website/js/paginas/institucional.js");
+            break;
     }
-
-    $('#navbar').on('shown.bs.collapse', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#navbar').on('hidden.bs.collapse', function () {
-        $('body').css('overflow', 'auto');
-    });
 });
 
 //efeito navbar superior
@@ -24,3 +20,46 @@ $(window).on('scroll', function () {
         $('#navbar').css('box-shadow', 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px');
     }
 });
+
+/**
+ * MODAL VIDEO
+ */
+$(".video-modal").click(function () {
+    let options = {
+        modestbranding: 1,
+        rel: 0,
+        controls: 1,
+        showinfo: 0,
+        html5: 1,
+        autoplay: 1,
+        mute: 1,
+        loop: 1,
+        fs: 0
+    }
+
+    var theModal = $(this).data("target"),
+        videoSRC = getId($(this).attr("data-video")),
+        videoSRCauto = videoSRC + `?${new URLSearchParams(options).toString()}`;
+
+    setTimeout(function () {
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+    }, 1000);
+
+    $(theModal).on('hidden.bs.modal', function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+    });
+});
+
+function getId(url) {
+    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    var match = url.match(regExp);
+
+    if (match && match[2].length == 11) {
+        return `https://www.youtube.com/embed/${match[2]}`
+    } else {
+        return 'error';
+    }
+}
+/**
+ * FIM MODAL VIDEO
+ */

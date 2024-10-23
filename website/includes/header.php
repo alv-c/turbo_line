@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- BEBAS GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
     <!-- OWL CAROUSEL CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -23,7 +26,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/website/index.php">
                     <img src="/website/img/logo.svg" class="d-block mx-auto img-fluid" alt="">
                 </a>
                 <button class="menu navbar-toggler"
@@ -41,13 +44,13 @@
                             d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                     </svg>
                 </button>
-                <div class="collapse navbar-collapse navbar-nav-scroll" id="contain-nav-buttons">
+                <div class="collapse navbar-collapse" id="contain-nav-buttons">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link <?= ($pagina == 'inicial') ? 'active' : ''; ?>" href="#">Home</a>
+                            <a class="nav-link <?= ($pagina == 'inicial') ? 'active' : ''; ?>" href="/website/index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($pagina == 'institucional') ? 'active' : ''; ?>" href="#">Institucional</a>
+                            <a class="nav-link <?= ($pagina == 'Institucional') ? 'active' : ''; ?>" href="/website/institucional.php">Institucional</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($pagina == 'planos') ? 'active' : ''; ?>" href="#">Planos</a>

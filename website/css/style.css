@@ -1252,6 +1252,145 @@ section.clientes-home .container-center-left > div.custom-nav > button {
   padding: 0;
 }
 
+section.media-institucional {
+  margin-top: 130px;
+  padding: 30px 0 75px;
+  background: #F7F8FA;
+}
+@media (min-width: 768px) {
+  section.media-institucional {
+    padding: 80px 0 100px;
+  }
+}
+@media (min-width: 992px) {
+  section.media-institucional {
+    margin-top: 100px;
+  }
+}
+section.media-institucional > .container div.top {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  section.media-institucional > .container div.top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 992px) {
+  section.media-institucional > .container div.top {
+    gap: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  section.media-institucional > .container div.top {
+    gap: 75px;
+  }
+}
+section.media-institucional > .container div.top > span {
+  display: block;
+  color: #000;
+  font-style: normal;
+}
+section.media-institucional > .container div.top > span.titulo {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46.8px;
+}
+@media (min-width: 768px) {
+  section.media-institucional > .container div.top > span.titulo {
+    font-size: 44px;
+    line-height: 57.2px;
+  }
+}
+section.media-institucional > .container div.top > span.desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  section.media-institucional > .container div.top > span.desc {
+    padding-top: 5px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 650px;
+  }
+}
+section.media-institucional > .container div.bottom > button.video-modal {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 210px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 24px;
+  border: 10px solid #003DA6;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  section.media-institucional > .container div.bottom > button.video-modal {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  section.media-institucional > .container div.bottom > button.video-modal {
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  section.media-institucional > .container div.bottom > button.video-modal {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  section.media-institucional > .container div.bottom > button.video-modal {
+    height: 440px;
+  }
+}
+section.media-institucional > .container div.bottom > button.video-modal > img {
+  display: block;
+  position: absolute;
+  inset: 0px 0px 0px 0px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.media-institucional > .container div.bottom .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.media-institucional > .container div.bottom .button {
+  transition: all 0.3s ease-in-out 0s;
+  position: relative;
+  z-index: 1;
+}
+section.media-institucional > .container div.bottom .button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #fff;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -1341,14 +1480,9 @@ header nav#navbar > .container > div#contain-nav-buttons::-webkit-scrollbar-thum
 header nav#navbar > .container > div#contain-nav-buttons::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
 }
-header nav#navbar > .container > div#contain-nav-buttons.show {
-  height: 100dvh;
-  max-height: 100dvh;
-  padding-bottom: 150px;
-}
 @media (max-width: 991.9px) {
   header nav#navbar > .container > div#contain-nav-buttons > ul.navbar-nav {
-    padding-bottom: 20px;
+    padding-bottom: 100dvh;
   }
 }
 @media (min-width: 1200px) {
@@ -1577,36 +1711,46 @@ footer > section.bottom {
   }
 }
 footer > section.bottom > .container {
-  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
+@media (min-width: 1300px) {
+  footer > section.bottom > .container {
+    grid-template-columns: 360px 1fr;
+    gap: 80px;
+  }
+}
+footer > section.bottom > .container > div.contain-right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
 @media (min-width: 768px) {
-  footer > section.bottom > .container {
-    grid-template-columns: 100% 50% 50% 50% 50%;
+  footer > section.bottom > .container > div.contain-right {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (min-width: 1200px) {
-  footer > section.bottom > .container {
-    grid-template-columns: repeat(5, 1fr);
+@media (min-width: 1300px) {
+  footer > section.bottom > .container > div.contain-right {
+    gap: 35px;
   }
 }
-footer > section.bottom > .container > div.coluna.direita div.logo {
+footer > section.bottom > .container div.coluna.esquerda div.logo {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 768px) {
-  footer > section.bottom > .container > div.coluna.direita div.logo {
+@media (min-width: 1300px) {
+  footer > section.bottom > .container div.coluna.esquerda div.logo {
     justify-content: flex-start;
   }
 }
-footer > section.bottom > .container > div.coluna.direita div.logo > img {
+footer > section.bottom > .container div.coluna.esquerda div.logo > img {
   display: block;
   width: 100%;
-  max-width: 310px;
+  max-width: 180px;
   object-fit: cover;
 }
-footer > section.bottom > .container > div.coluna.direita > span {
+footer > section.bottom > .container div.coluna.esquerda > span {
   display: block;
   color: #FFF;
   font-size: 16px;
@@ -1616,17 +1760,21 @@ footer > section.bottom > .container > div.coluna.direita > span {
   padding: 20px 0 30px;
   text-align: center;
 }
-footer > section.bottom > .container > div.coluna.direita > span .destaque {
+footer > section.bottom > .container div.coluna.esquerda > span .destaque {
   font-weight: 700;
 }
 @media (min-width: 768px) {
-  footer > section.bottom > .container > div.coluna.direita > span {
+  footer > section.bottom > .container div.coluna.esquerda > span {
     font-size: 18px;
     padding: 20px 0 40px;
+  }
+}
+@media (min-width: 1300px) {
+  footer > section.bottom > .container div.coluna.esquerda > span {
     text-align: left;
   }
 }
-footer > section.bottom > .container > div.coluna.direita > div.contain-redes-sociais {
+footer > section.bottom > .container div.coluna.esquerda > div.contain-redes-sociais {
   padding-bottom: 50px;
   display: flex;
   flex-wrap: nowrap;
@@ -1634,23 +1782,23 @@ footer > section.bottom > .container > div.coluna.direita > div.contain-redes-so
   align-items: center;
   gap: 25px;
 }
-@media (min-width: 768px) {
-  footer > section.bottom > .container > div.coluna.direita > div.contain-redes-sociais {
+@media (min-width: 1300px) {
+  footer > section.bottom > .container div.coluna.esquerda > div.contain-redes-sociais {
     justify-content: flex-start;
   }
 }
-footer > section.bottom > .container > div.coluna.direita > div.contain-redes-sociais > a {
+footer > section.bottom > .container div.coluna.esquerda > div.contain-redes-sociais > a {
   display: inline-block;
   text-decoration: none;
 }
-footer > section.bottom > .container > div.coluna:not(footer > section.bottom > .container > div.coluna.direita) {
+footer > section.bottom > .container div.coluna:not(footer > section.bottom > .container div.coluna.esquerda) {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 12px;
 }
-footer > section.bottom > .container > div.coluna:not(footer > section.bottom > .container > div.coluna.direita) > span.titulo-col {
+footer > section.bottom > .container div.coluna:not(footer > section.bottom > .container div.coluna.esquerda) > span.titulo-col {
   display: block;
   width: 100%;
   color: #FFF;
@@ -1661,7 +1809,7 @@ footer > section.bottom > .container > div.coluna:not(footer > section.bottom > 
   text-transform: capitalize;
   opacity: 0.7;
 }
-footer > section.bottom > .container > div.coluna:not(footer > section.bottom > .container > div.coluna.direita) > a.item-col {
+footer > section.bottom > .container div.coluna:not(footer > section.bottom > .container div.coluna.esquerda) > a.item-col {
   display: inline-block;
   text-decoration: none;
   color: #FFF;
@@ -1671,19 +1819,19 @@ footer > section.bottom > .container > div.coluna:not(footer > section.bottom > 
   line-height: 16.5px;
   text-transform: capitalize;
 }
-footer > section.bottom > .container > div.coluna:not(footer > section.bottom > .container > div.coluna.direita) > a.item-col-ico {
+footer > section.bottom > .container div.coluna:not(footer > section.bottom > .container div.coluna.esquerda) > a.item-col-ico {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 4px;
 }
-footer > section.bottom > .container > div.coluna:not(footer > section.bottom > .container > div.coluna.direita) > a.item-col-ico > div.ico {
+footer > section.bottom > .container div.coluna:not(footer > section.bottom > .container div.coluna.esquerda) > a.item-col-ico > div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer > section.bottom > .container > div.coluna:not(footer > section.bottom > .container > div.coluna.direita) > a.item-col-ico > span {
+footer > section.bottom > .container div.coluna:not(footer > section.bottom > .container div.coluna.esquerda) > a.item-col-ico > span {
   display: block;
   color: #FFF;
   font-size: 15px;
@@ -1691,6 +1839,25 @@ footer > section.bottom > .container > div.coluna:not(footer > section.bottom > 
   font-weight: 400;
   line-height: 16.5px;
   text-transform: capitalize;
+}
+footer > section.development {
+  background: #1c1c1c;
+  padding: 12px 0 10px;
+}
+footer > section.development > .container {
+  display: flex;
+  justify-content: center;
+}
+footer > section.development > .container > a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1.4px;
 }
 
 .container {
@@ -1759,6 +1926,19 @@ footer > section.bottom > .container > div.coluna:not(footer > section.bottom > 
 @media (min-width: 1300px) {
   .container-center-left {
     max-width: calc((100% - 1216px) / 2 + 1216px) !important;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 220px;
+    height: 220px;
+    opacity: 0;
   }
 }
 

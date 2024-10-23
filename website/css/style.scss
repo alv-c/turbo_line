@@ -1,4 +1,5 @@
 @import './paginas/index.scss';
+@import './paginas/institucional.scss';
 
 // GERAL =================================
 * {
@@ -141,12 +142,6 @@ header {
         z-index: 2;
         transition: padding .5s;
 
-        // @media(max-width: 991.9px) {
-        //     height: 700px;
-        //     overflow-y: scroll;
-        //     padding-bottom: 50px;
-        // }
-
         >.container {
             .menu {
                 background-color: transparent;
@@ -219,15 +214,9 @@ header {
                     background-color: transparent;
                 }
 
-                &.show {
-                    height: 100dvh;
-                    max-height: 100dvh;
-                    padding-bottom: 150px;
-                }
-
                 >ul.navbar-nav {
                     @media(max-width: 991.9px) {
-                        padding-bottom: 20px;
+                        padding-bottom: 100dvh;
                     }
 
                     @media(min-width: 1200px) {
@@ -326,7 +315,6 @@ header {
 }
 
 footer {
-    // background: forestgreen;
     margin: 0;
     padding: 0;
 
@@ -473,34 +461,42 @@ footer {
             }
 
             >.container {
-                border: 2px solid red;
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
 
-                @media(min-width: 768px) {
-                    grid-template-columns: 100% 50% 50% 50% 50%;
+                @media(min-width: 1300px) {
+                    grid-template-columns: 360px 1fr;
+                    gap: 80px;
                 }
 
-                @media(min-width: 1200px) {
-                    grid-template-columns: repeat(5, 1fr);
+                >div.contain-right {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 40px;
+
+                    @media(min-width: 768px) {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+
+                    @media(min-width: 1300px) {
+                        gap: 35px;
+                    }
                 }
 
-                >div.coluna {
-                    // border: 2px solid #fff;
-
-                    &.direita {
+                div.coluna {
+                    &.esquerda {
                         div.logo {
                             display: flex;
                             justify-content: center;
 
-                            @media(min-width: 768px) {
+                            @media(min-width: 1300px) {
                                 justify-content: flex-start;
                             }
 
                             >img {
                                 display: block;
                                 width: 100%;
-                                max-width: 310px;
+                                max-width: 180px;
                                 object-fit: cover;
                             }
                         }
@@ -522,6 +518,9 @@ footer {
                             @media(min-width: 768px) {
                                 font-size: 18px;
                                 padding: 20px 0 40px;
+                            }
+
+                            @media(min-width: 1300px) {
                                 text-align: left;
                             }
                         }
@@ -534,7 +533,7 @@ footer {
                             align-items: center;
                             gap: 25px;
 
-                            @media(min-width: 768px) {
+                            @media(min-width: 1300px) {
                                 justify-content: flex-start;
                             }
 
@@ -545,7 +544,7 @@ footer {
                         }
                     }
 
-                    &:not(&.direita) {
+                    &:not(&.esquerda) {
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
@@ -601,6 +600,28 @@ footer {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        &.development {
+            background: #1c1c1c;
+            padding: 12px 0 10px;
+
+            >.container {
+                display: flex;
+                justify-content: center;
+
+                >a {
+                    display: inline-block;
+                    text-decoration: none;
+                    font-family: "Bebas Neue", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #fff;
+                    font-size: 16px;
+                    text-align: center;
+                    letter-spacing: 1.4px;
                 }
             }
         }
@@ -664,5 +685,20 @@ footer {
 
     @media (min-width: 1300px) {
         max-width: calc((100% - 1216px) / 2 + 1216px) !important;
+    }
+}
+
+//ANIMACOES
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 220px;
+        height: 220px;
+        opacity: 0;
     }
 }
