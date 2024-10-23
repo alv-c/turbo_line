@@ -1941,5 +1941,22 @@ footer > section.development > .container > a {
     opacity: 0;
   }
 }
+#videoModal {
+  background: rgba(0, 0, 0, 0.5);
+}
+#videoModal .modal-content {
+  background: none;
+  border-radius: 0;
+  border: none;
+}
+#videoModal .modal-content > div.modal-header {
+  padding: 0 0 20px;
+  border-radius: 0;
+  border: none;
+}
+#videoModal .modal-content > div.modal-body {
+  padding: 0;
+  border: none;
+}
 
 /*# sourceMappingURL=style.css.map */

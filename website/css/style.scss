@@ -702,3 +702,24 @@ footer {
         opacity: 0;
     }
 }
+
+//ESTILOS MODAL VIDEO
+#videoModal {
+    background: rgba(0, 0, 0, 0.5);
+    .modal-content {
+        background: none;
+        border-radius: 0;
+        border: none;
+
+        >div.modal-header {
+            padding: 0 0 20px;
+            border-radius: 0;
+            border: none;
+        }
+
+        >div.modal-body {
+            padding: 0;
+            border: none;
+        }
+    }
+}

@@ -41,7 +41,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
     </div>
 </section>
 
-<?php require $_SERVER["DOCUMENT_ROOT"] . '/website/includes/modal_video'; ?>
+<?php require $_SERVER["DOCUMENT_ROOT"] . '/website/includes/modal_video.php'; ?>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
