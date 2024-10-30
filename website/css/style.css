@@ -1395,19 +1395,57 @@ section.missao-institucional {
   padding: 25px 0;
   position: relative;
 }
+@media (min-width: 768px) {
+  section.missao-institucional {
+    padding: 70px 0 170px;
+  }
+}
 section.missao-institucional::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 50px;
-  height: 50%;
-  background: red;
+  margin-bottom: auto;
+  width: 50%;
+  height: calc(50% - 98px);
+  background: #F5862D;
+  border-radius: 0px 24px 24px 0px;
+}
+@media (min-width: 400px) {
+  section.missao-institucional::after {
+    height: calc(50% - 68px);
+  }
+}
+@media (min-width: 576px) {
+  section.missao-institucional::after {
+    height: calc(50% + 37px);
+  }
 }
 @media (min-width: 768px) {
-  section.missao-institucional {
-    padding: 70px 0;
+  section.missao-institucional::after {
+    height: calc(100% - 150px);
+    width: calc(50% - 200px);
   }
+}
+@media (min-width: 992px) {
+  section.missao-institucional::after {
+    height: calc(100% - 100px);
+    width: calc(50% - 270px);
+  }
+}
+@media (min-width: 1200px) {
+  section.missao-institucional::after {
+    width: calc(50% - 320px);
+  }
+}
+@media (min-width: 1300px) {
+  section.missao-institucional::after {
+    width: calc(50% - 350px);
+  }
+}
+section.missao-institucional > div.container {
+  position: relative;
+  z-index: 1;
 }
 section.missao-institucional > div.container > div.grid {
   display: flex;
@@ -1503,7 +1541,6 @@ section.missao-institucional > div.container > div.grid > div.right > div.contai
   }
 }
 section.missao-institucional > div.container > div.grid > div.right > div.contain-items > div.item {
-  border: 2px solid cyan;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -1516,6 +1553,7 @@ section.missao-institucional > div.container > div.grid > div.right > div.contai
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid red;
 }
 section.missao-institucional > div.container > div.grid > div.right > div.contain-items > div.item > span {
   display: block;
@@ -1527,6 +1565,259 @@ section.missao-institucional > div.container > div.grid > div.right > div.contai
   line-height: 19.5px;
   width: 100%;
   max-width: 120px;
+}
+section.visao-institucional {
+  padding: 30px 0 80px;
+  background-image: linear-gradient(to bottom right, #1E90FF, #003DA6);
+  position: relative;
+}
+@media (min-width: 768px) {
+  section.visao-institucional {
+    padding: 50px 0;
+  }
+}
+section.visao-institucional::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 230px;
+  height: 50px;
+  background: #F58220;
+}
+@media (min-width: 576px) {
+  section.visao-institucional::before {
+    width: 390px;
+  }
+}
+@media (min-width: 767px) {
+  section.visao-institucional::before {
+    left: auto;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: calc(50% - 150px);
+    height: 140px;
+  }
+}
+@media (min-width: 992px) {
+  section.visao-institucional::before {
+    height: 190px;
+  }
+}
+@media (min-width: 1200px) {
+  section.visao-institucional::before {
+    height: 230px;
+  }
+}
+@media (min-width: 1300px) {
+  section.visao-institucional::before {
+    height: 240px;
+  }
+}
+section.visao-institucional .container {
+  position: relative;
+  z-index: 1;
+}
+section.visao-institucional .container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -82px;
+  width: 100%;
+  height: 50px;
+  background: #F58220;
+  z-index: 2;
+  border-radius: 35px 35px 0px 0px;
+}
+@media (min-width: 768px) {
+  section.visao-institucional .container::after {
+    left: calc(-100% - 20px);
+    right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0px 35px 35px 0px;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  section.visao-institucional .container::after {
+    height: calc(100% - 100px);
+  }
+}
+@media (min-width: 1300px) {
+  section.visao-institucional .container::after {
+    left: calc(-100% - 20px);
+    height: calc(100% - 130px);
+  }
+}
+@media (min-width: 1500px) {
+  section.visao-institucional .container::after {
+    left: calc(-100% - 75px);
+  }
+}
+section.visao-institucional .container > div.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (min-width: 768px) {
+  section.visao-institucional .container > div.grid {
+    flex-direction: row;
+  }
+}
+section.visao-institucional .container > div.grid > div {
+  width: 100%;
+}
+section.visao-institucional .container > div.grid > div.left {
+  order: 2;
+}
+@media (min-width: 768px) {
+  section.visao-institucional .container > div.grid > div.left {
+    order: 1;
+  }
+}
+section.visao-institucional .container > div.grid > div.left > span {
+  display: block;
+  color: #FFF;
+  font-style: normal;
+}
+section.visao-institucional .container > div.grid > div.left > span.titulo {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33.8px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  section.visao-institucional .container > div.grid > div.left > span.titulo {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+section.visao-institucional .container > div.grid > div.left > span.desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+section.visao-institucional .container > div.grid > div.right {
+  order: 1;
+}
+@media (min-width: 768px) {
+  section.visao-institucional .container > div.grid > div.right {
+    order: 2;
+  }
+}
+section.visao-institucional .container > div.grid > div.right > img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 683px;
+  object-fit: cover;
+}
+section.valores-institucional {
+  padding: 80px 0;
+  background: #F7F8FA;
+}
+@media (min-width: 768px) {
+  section.valores-institucional {
+    padding: 100px 0;
+  }
+}
+section.valores-institucional .container > span.titulo {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  padding-bottom: 35px;
+}
+section.valores-institucional .container > div.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+@media (min-width: 576px) {
+  section.valores-institucional .container > div.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  section.valores-institucional .container > div.grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  section.valores-institucional .container > div.grid {
+    gap: 20px;
+  }
+}
+section.valores-institucional .container > div.grid > div.card-valores {
+  border-radius: 19px;
+  background: #FFF;
+  box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+}
+section.valores-institucional .container > div.grid > div.card-valores > div.top {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+section.valores-institucional .container > div.grid > div.card-valores > div.top > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.valores-institucional .container > div.grid > div.card-valores > div.top > span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.8px;
+}
+@media (min-width: 768px) {
+  section.valores-institucional .container > div.grid > div.card-valores > div.top > span {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+}
+section.valores-institucional .container > div.grid > div.card-valores > div.body > span.desc {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+@media (min-width: 992px) {
+  section.valores-institucional .container > div.grid > div.card-valores > div.body > span.desc {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+}
+section.escolher-institucional {
+  padding: 55px 0 90px;
+  border: 2px solid red;
+}
+@media (min-width: 768px) {
+  section.escolher-institucional {
+    padding: 70px 0 75px;
+  }
 }
 
 * {
