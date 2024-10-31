@@ -1,0 +1,126 @@
+section {
+    &.bg-planos {
+        margin-top: 130px;
+        padding: 30px 0 45px;
+        background: url('/website/img/planos/planos-bg.png') no-repeat center top;
+        background-size: cover;
+
+        @media(min-width: 768px) {
+            padding: 75px 0 80px;
+        }
+
+        >div.container {
+            >span.titulo {
+                display: block;
+                position: relative;
+                text-align: center;
+                color: #FFF;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 15px;
+                    height: 5px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    &.listagem-planos {
+        border: 2px solid red;
+        background: #fff;
+        padding: 40px 0 0;
+
+        @media(min-width: 768px) {
+            padding: 75px 0 0;
+        }
+
+        >div.container {
+            >span {
+                display: block;
+
+                &.titulo {
+                    color: #142954;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 33.8px;
+                    padding-bottom: 12px;
+
+                    @media(min-width: 768px) {
+                        text-align: center;
+                        font-size: 30px;
+                        line-height: 39px;
+                        padding-bottom: 5px;
+                    }
+                }
+
+                &.desc {
+                    color: #000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    padding-bottom: 50px;
+
+                    @media(min-width: 768px) {
+                        text-align: center;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+
+            >div.grid-btns {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                flex-direction: column;
+                gap: 12px;
+                padding-bottom: 20px;
+
+                @media(min-width: 768px) {
+                    flex-direction: row;
+                    gap: 15px;
+                    max-width: 535px;
+                    margin: 0 auto;
+                    padding-bottom: 30px; 
+                }
+
+                >div {
+                    width: 100%;
+
+                    >button.btn-filtro {
+                        display: block;
+                        width: 100%;
+                        border: none;
+                        border-radius: 12px;
+                        background: #E0E0E0;
+                        outline: none;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        padding: 11px 10px 9px;
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.2px;
+
+                        &.active {
+                            background: #003DA6;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
