@@ -297,7 +297,6 @@ section {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    border: 2px solid red;
                                 }
 
                                 >span {
@@ -571,10 +570,133 @@ section {
 
     &.escolher-institucional {
         padding: 55px 0 90px;
-        border: 2px solid red;
+        background-image: url('/website/img/institucional/escolher-bg-mobille.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
 
         @media(min-width: 768px) {
             padding: 70px 0 75px;
+            background-image: url('/website/img/institucional/escolher-bg-desktop.png');
+        }
+
+        >div.container {
+            >div {
+                &.grid-top {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    padding-bottom: 30px;
+
+                    @media (min-width: 576px) {
+                        gap: 35px;
+                    }
+
+                    @media(min-width: 768px) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-bottom: 50px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        gap: 180px;
+                    }
+
+                    >div {
+                        width: 100%;
+
+                        &.left {
+                            >span.titulo {
+                                display: block;
+                                color: #FFF;
+                                font-size: 26px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 33.8px;
+
+                                @media(min-width: 768px) {
+                                    font-size: 30px;
+                                    line-height: 39px;
+                                }
+                            }
+                        }
+
+                        &.right {
+                            >span.desc {
+                                display: block;
+                                color: #FFF;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 25.6px;
+                            }
+                        }
+                    }
+                }
+
+                &.grid-cards {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 35px;
+
+                    @media (min-width: 576px) {
+                        gap: 45px;
+                    }
+
+                    @media(min-width: 768px) {
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 20px;
+                    }
+
+                    @media(min-width: 992px) {
+                        gap: 30px;
+                    }
+
+                    @media(min-width: 1200px) {
+                        gap: 40px;
+                    }
+
+                    >div.card-escolher {
+                        width: 100%;
+                        border-radius: 19px;
+                        background: #FFF;
+                        box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
+                        padding: 17px 35px;
+
+                        >div {
+                            &.ico {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding-bottom: 15px;
+                            }
+
+                            &.body {
+                                >span {
+                                    display: block;
+                                    text-align: center;
+                                    color: #000;
+                                    font-size: 16px;
+                                    font-style: normal;
+
+                                    &.titulo {
+                                        font-weight: 700;
+                                        line-height: 20.8px;
+                                        padding-bottom: 8px;
+                                    }
+
+                                    &.desc {
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

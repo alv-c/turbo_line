@@ -1103,12 +1103,12 @@ section.beneficios-home div.contain-card-benef > div.card-benef > div.bottom spa
   }
 }
 section.clientes-home {
-  padding: 55px 0 100px;
+  padding: 55px 0 0;
   background: #F7F8FA;
 }
 @media (min-width: 768px) {
   section.clientes-home {
-    padding: 135px 0;
+    padding: 135px 0 0;
   }
 }
 section.clientes-home .container-center-left > div.contain-top {
@@ -1553,7 +1553,6 @@ section.missao-institucional > div.container > div.grid > div.right > div.contai
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 section.missao-institucional > div.container > div.grid > div.right > div.contain-items > div.item > span {
   display: block;
@@ -1812,12 +1811,121 @@ section.valores-institucional .container > div.grid > div.card-valores > div.bod
 }
 section.escolher-institucional {
   padding: 55px 0 90px;
-  border: 2px solid red;
+  background-image: url("/website/img/institucional/escolher-bg-mobille.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   section.escolher-institucional {
     padding: 70px 0 75px;
+    background-image: url("/website/img/institucional/escolher-bg-desktop.png");
   }
+}
+section.escolher-institucional > div.container > div.grid-top {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 30px;
+}
+@media (min-width: 576px) {
+  section.escolher-institucional > div.container > div.grid-top {
+    gap: 35px;
+  }
+}
+@media (min-width: 768px) {
+  section.escolher-institucional > div.container > div.grid-top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  section.escolher-institucional > div.container > div.grid-top {
+    gap: 180px;
+  }
+}
+section.escolher-institucional > div.container > div.grid-top > div {
+  width: 100%;
+}
+section.escolher-institucional > div.container > div.grid-top > div.left > span.titulo {
+  display: block;
+  color: #FFF;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.8px;
+}
+@media (min-width: 768px) {
+  section.escolher-institucional > div.container > div.grid-top > div.left > span.titulo {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+section.escolher-institucional > div.container > div.grid-top > div.right > span.desc {
+  display: block;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+section.escolher-institucional > div.container > div.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 35px;
+}
+@media (min-width: 576px) {
+  section.escolher-institucional > div.container > div.grid-cards {
+    gap: 45px;
+  }
+}
+@media (min-width: 768px) {
+  section.escolher-institucional > div.container > div.grid-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  section.escolher-institucional > div.container > div.grid-cards {
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  section.escolher-institucional > div.container > div.grid-cards {
+    gap: 40px;
+  }
+}
+section.escolher-institucional > div.container > div.grid-cards > div.card-escolher {
+  width: 100%;
+  border-radius: 19px;
+  background: #FFF;
+  box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 35px;
+}
+section.escolher-institucional > div.container > div.grid-cards > div.card-escolher > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+section.escolher-institucional > div.container > div.grid-cards > div.card-escolher > div.body > span {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+}
+section.escolher-institucional > div.container > div.grid-cards > div.card-escolher > div.body > span.titulo {
+  font-weight: 700;
+  line-height: 20.8px;
+  padding-bottom: 8px;
+}
+section.escolher-institucional > div.container > div.grid-cards > div.card-escolher > div.body > span.desc {
+  font-weight: 400;
+  line-height: 24px;
 }
 
 * {
@@ -2006,10 +2114,12 @@ footer {
 footer > section.top {
   background: #F7F8FA;
   padding-bottom: 115px;
+  padding-top: 100px;
 }
 @media (min-width: 768px) {
   footer > section.top {
     padding-bottom: 135px;
+    padding-top: 135px;
   }
 }
 footer > section.top > .container > div.top-img > div {
