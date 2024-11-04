@@ -1,0 +1,326 @@
+@mixin card-oferta {
+    div.card-oferta {
+        width: 100%;
+        max-width: 380px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: relative;
+        border-radius: 10px;
+
+        &.oferta {
+            &::after {
+                content: 'Oferta por tempo limitado';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -24px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: 215px;
+                border-radius: 12px;
+                background: #F58220;
+                padding: 11px 10px 9px;
+                color: #FFF;
+                font-size: 14px;
+                line-height: 16.8px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+
+                @media(min-width: 768px) {
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    max-width: 260px;
+                }
+            }
+        }
+
+        &.mais-vendido {
+            &::after {
+                content: 'Mais vendida';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -24px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: 215px;
+                border-radius: 12px;
+                background: #F58220;
+                padding: 11px 10px 9px;
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                line-height: 16.8px;
+                font-style: normal;
+                font-weight: 400;
+
+                @media(min-width: 768px) {
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    max-width: 260px;
+                }
+            }
+
+            >div {
+                &.header-card {
+                    background: #022E79;
+                }
+
+                &.body-card {
+                    background: #003DA6;
+
+                    >span {
+                        &.preco {
+                            color: #fff;
+                        }
+
+                        &.validade-oferta {
+                            color: rgba(255, 255, 255, .5);
+                        }
+                    }
+
+                    >div.tipo-pag {
+                        >div.ico {
+                            >svg {
+                                g {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+
+                        >span {
+                            color: rgba(255, 255, 255, .5);
+                        }
+                    }
+                }
+
+                &.footer-card {
+                    background: #022E79;
+
+                    >div {
+                        &.ico {
+                            >svg {
+                                >rect {
+                                    stroke: #fff;
+                                }
+
+                                g {
+                                    >path {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.right-footer-card {
+                            >span {
+                                &.beneficio {
+                                    color: rgba(255, 255, 255, .5);
+                                }
+
+                                &.inclusao {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >div {
+            &.header-card {
+                background: #003DA6;
+                padding: 20px 20px 25px;
+                overflow: hidden;
+                border-radius: 10px 10px 0px 0px;
+
+                >span {
+                    display: block;
+                    text-align: center;
+                    font-style: normal;
+
+                    &.subtitulo {
+                        color: rgba(255, 255, 255, .5);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20.8px;
+                        padding-bottom: 8px;
+
+                        @media(min-width: 600px) {
+                            font-size: 18px;
+                            line-height: 23.4px;
+                        }
+                    }
+
+                    &.titulo {
+                        color: #FFF;
+                        font-size: 40px;
+                        font-weight: 700;
+                        line-height: 52px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            &.body-card {
+                background: #fff;
+                padding: 25px 20px 20px;
+
+                >span {
+                    display: block;
+                    text-align: center;
+                    font-style: normal;
+
+                    &.preco {
+                        color: #003DA6;
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 39px;
+                        text-transform: uppercase;
+                    }
+
+                    &.validade-oferta {
+                        color: rgba(0, 0, 0, .5);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20.8px;
+                        padding-bottom: 25px;
+
+                        @media(min-width: 600px) {
+                            font-size: 18px;
+                            line-height: 23.4px;
+                        }
+                    }
+                }
+
+                >a.assinatura-card {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 12px 33px;
+                    border-radius: 12px;
+                    background: #F58220;
+                    white-space: nowrap;
+                    text-decoration: none;
+
+                    >div.ico {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        bottom: 1px;
+                    }
+
+                    >span {
+                        display: block;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+                }
+
+                >div.tipo-pag {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    gap: 10px;
+                    margin-top: 15px;
+
+                    >div.ico {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        >svg {
+                            g {
+                                path {
+                                    fill: #000;
+                                }
+                            }
+                        }
+                    }
+
+                    >span {
+                        display: block;
+                        color: rgba(0, 0, 0, .5);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20.8px;
+
+                        @media(min-width: 600px) {
+                            font-size: 18px;
+                            line-height: 23.4px;
+                        }
+                    }
+                }
+            }
+
+            &.footer-card {
+                padding: 24px 20px;
+                background: #F5F5F5;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap;
+                gap: 8px;
+                overflow: hidden;
+                border-radius: 0px 0px 10px 10px;
+
+                >div {
+                    &.ico {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        >svg {
+                            >rect {
+                                stroke: #000;
+                            }
+
+                            g {
+                                >path {
+                                    fill: #000;
+                                }
+                            }
+                        }
+                    }
+
+                    &.right-footer-card {
+                        >span {
+                            display: block;
+                            font-size: 16px;
+                            line-height: 20.8px;
+                            font-style: normal;
+
+                            @media(min-width: 600px) {
+                                font-size: 18px;
+                                line-height: 23.4px;
+                            }
+
+                            &.beneficio {
+                                color: rgba(0, 0, 0, .5);
+                                font-weight: 400;
+                            }
+
+                            &.inclusao {
+                                color: #003DA6;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

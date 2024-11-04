@@ -9,6 +9,10 @@ section {
             padding: 75px 0 80px;
         }
 
+        @media(min-width: 992px) {
+            margin-top: 100px;
+        }
+
         >div.container {
             >span.titulo {
                 display: block;
@@ -37,7 +41,6 @@ section {
     }
 
     &.listagem-planos {
-        border: 2px solid red;
         background: #fff;
         padding: 40px 0 0;
 
@@ -86,14 +89,14 @@ section {
                 align-items: center;
                 flex-direction: column;
                 gap: 12px;
-                padding-bottom: 20px;
+                padding-bottom: 45px;
 
                 @media(min-width: 768px) {
                     flex-direction: row;
                     gap: 15px;
                     max-width: 535px;
                     margin: 0 auto;
-                    padding-bottom: 30px; 
+                    padding-bottom: 55px;
                 }
 
                 >div {
@@ -119,6 +122,30 @@ section {
                             color: #fff;
                         }
                     }
+                }
+            }
+
+            >div.grid-cards {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: space-between;
+                gap: 40px;
+
+                @media (min-width: 600px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 40px 20px;
+                }
+
+                @media (min-width: 992px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media (min-width: 1200px) {
+                    gap: 80px 40px;
+                }
+
+                >div.coluna {
+                    @include card-oferta;
                 }
             }
         }
