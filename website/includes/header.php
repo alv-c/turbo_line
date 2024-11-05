@@ -20,6 +20,9 @@
     <!-- OWL CAROUSEL CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- MAPBOX -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body id="<?= $pagina ?>">
@@ -53,10 +56,10 @@
                             <a class="nav-link <?= ($pagina == 'Institucional') ? 'active' : ''; ?>" href="/website/institucional.php">Institucional</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($pagina == 'planos') ? 'active' : ''; ?>" href="#">Planos</a>
+                            <a class="nav-link <?= ($pagina == 'planos') ? 'active' : ''; ?>" href="/website/planos.php">Planos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($pagina == 'contato') ? 'active' : ''; ?>" href="#">Contato</a>
+                            <a class="nav-link <?= ($pagina == 'contato') ? 'active' : ''; ?>" href="/website/contato.php">Contato</a>
                         </li>
                     </ul>
                     <form class="form-inline" id="contain-right-btns-nav">

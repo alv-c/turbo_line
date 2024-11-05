@@ -1,6 +1,6 @@
 <?php
 $nomePrimarioTitulo = '';
-$pagina = 'Planos';
+$pagina = 'planos';
 require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
 ?>
 <section class="bg-planos">

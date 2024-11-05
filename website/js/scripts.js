@@ -3,9 +3,13 @@ $(document).ready(function () {
         case 'inicial':
             $.getScript("/website/js/paginas/index.js");
             break;
-        
+
         case 'Institucional':
             $.getScript("/website/js/paginas/institucional.js");
+            break;
+
+        case 'contato':
+            $.getScript("/website/js/paginas/contato.js");
             break;
     }
 });
