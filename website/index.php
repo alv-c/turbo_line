@@ -10,7 +10,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             <div class="item">
                 <a href="#">
                     <!-- desktop -->
-                    <img src="/website/img/index/banner_1.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
+                    <img src="/website/img/index/banner_1.png" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
                     <!-- mobille -->
                     <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
                 </a>
@@ -18,7 +18,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             <div class="item">
                 <a href="#">
                     <!-- desktop -->
-                    <img src="/website/img/index/banner_2.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
+                    <img src="/website/img/index/banner_2.png" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
                     <!-- mobille -->
                     <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
                 </a>
@@ -26,7 +26,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             <div class="item">
                 <a href="#">
                     <!-- desktop -->
-                    <img src="/website/img/index/banner_3.jpg" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
+                    <img src="/website/img/index/banner_3.png" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
                     <!-- mobille -->
                     <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
                 </a>
@@ -355,120 +355,73 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<section class="link-dedicado-home">
-    <div class="container">
-        <div class="grid">
-            <div class="left">
-                <span class="titulo">
-                    <strong>Link dedicado</strong>
-                    TurboLine
-                </span>
-                <span class="subtitulo">
-                    Conectividade sem Interferências para o Seu Negócio.
-                </span>
-                <span class="desc">
-                    Se você precisa de uma internet ultrarrápida, segura e sem oscilações para a sua empresa,
-                    o Link Dedicado da TurboLine é a solução perfeita. Com velocidade simétrica, conexão
-                    exclusiva e suporte técnico especializado, garantimos a infraestrutura necessária para
-                    o sucesso do seu negócio.
-                </span>
-                <div class="grid-cards">
-                    <div class="card-link-dedicado">
-                        <div class="ico">
-                            <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.221191" y="0.483887" width="70.5574" height="70.5574" rx="35.2787" fill="#003DA6" />
-                                <g clip-path="url(#clip0_1939_995)">
-                                    <mask id="mask0_1939_995" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="14" width="41" height="41">
-                                        <rect x="14.5" y="14.5249" width="40" height="40" fill="#D9D9D9" />
-                                    </mask>
-                                    <g>
-                                        <path d="M21.1666 44.5249V41.1916H31.9999L17.8333 27.0249L20.1666 24.6916L34.4999 38.9832L43.1666 30.3166C43.0555 30.0666 42.9721 29.8096 42.9166 29.5457C42.861 29.2818 42.8333 28.9971 42.8333 28.6916C42.8333 27.5249 43.236 26.5388 44.0416 25.7332C44.8471 24.9277 45.8333 24.5249 46.9999 24.5249C48.1666 24.5249 49.1527 24.9277 49.9583 25.7332C50.7638 26.5388 51.1666 27.5249 51.1666 28.6916C51.1666 29.8582 50.7638 30.8443 49.9583 31.6499C49.1527 32.4555 48.1666 32.8582 46.9999 32.8582C46.7499 32.8582 46.5069 32.8374 46.2708 32.7957C46.0346 32.7541 45.8055 32.6916 45.5833 32.6082L36.9999 41.1916H47.8333V44.5249H21.1666Z" fill="white" />
-                                    </g>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1939_995">
-                                        <rect width="35.2787" height="36.1607" fill="white" transform="translate(17.8606 17.6821)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
 
-                        </div>
-                        <span>Velocidade <br> simétrica</span>
+
+<section class="servicos-home">
+    <div class="container">
+        <div class="top">
+            <span class="titulo">Serviços Exclusivos para Uma <strong>Experiência Completa</strong></span>
+            <span class="desc">
+                Em nossos planos, você conta com serviços adicionais trazendo entretenimento e aprendizado direto para você. 
+            </span>
+
+
+
+            <fieldset class="contain-cards-serv">
+
+
+                <div class="card-serv">
+                    <div class="top">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/03/22/10/nature-7633454_640.jpg" alt="Deezer">
                     </div>
-                    <div class="card-link-dedicado">
-                        <div class="ico">
-                            <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.221191" y="0.483887" width="70.5574" height="70.5574" rx="35.2787" fill="#003DA6" />
-                                <g clip-path="url(#clip0_1939_1003)">
-                                    <mask id="mask0_1939_1003" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="14" width="41" height="41">
-                                        <rect x="14.6392" y="14.8423" width="40" height="40" fill="#D9D9D9" />
-                                    </mask>
-                                    <g>
-                                        <path d="M23.9164 44.4995C22.3331 42.9162 21.1178 41.1176 20.2706 39.1037C19.4234 37.0898 18.9998 34.9717 18.9998 32.7495C18.9998 30.5273 19.4234 28.4092 20.2706 26.3953C21.1178 24.3815 22.3331 22.5828 23.9164 20.9995L25.9164 22.9995C24.6109 24.3051 23.6039 25.7981 22.8956 27.4787C22.1873 29.1592 21.8331 30.9162 21.8331 32.7495C21.8331 34.5828 22.1873 36.3398 22.8956 38.0203C23.6039 39.7009 24.6109 41.194 25.9164 42.4995L23.9164 44.4995ZM27.7498 40.6662C26.6942 39.6106 25.8886 38.4023 25.3331 37.0412C24.7775 35.6801 24.4998 34.2495 24.4998 32.7495C24.4998 31.2495 24.7775 29.819 25.3331 28.4578C25.8886 27.0967 26.6942 25.8884 27.7498 24.8328L29.7498 26.8328C28.9442 27.6384 28.34 28.5481 27.9373 29.562C27.5345 30.5759 27.3331 31.6384 27.3331 32.7495C27.3331 33.8606 27.5345 34.9231 27.9373 35.937C28.34 36.9509 28.9442 37.8606 29.7498 38.6662L27.7498 40.6662ZM33.9998 51.0828V36.5828C33.2498 36.2495 32.6456 35.7356 32.1873 35.0412C31.7289 34.3467 31.4998 33.5828 31.4998 32.7495C31.4998 31.5828 31.9025 30.5967 32.7081 29.7912C33.5136 28.9856 34.4998 28.5828 35.6664 28.5828C36.8331 28.5828 37.8192 28.9856 38.6248 29.7912C39.4303 30.5967 39.8331 31.5828 39.8331 32.7495C39.8331 33.5828 39.6039 34.3467 39.1456 35.0412C38.6873 35.7356 38.0831 36.2495 37.3331 36.5828V51.0828H33.9998ZM43.5831 40.6662L41.5831 38.6662C42.3886 37.8606 42.9928 36.9509 43.3956 35.937C43.7984 34.9231 43.9998 33.8606 43.9998 32.7495C43.9998 31.6384 43.7984 30.5759 43.3956 29.562C42.9928 28.5481 42.3886 27.6384 41.5831 26.8328L43.5831 24.8328C44.6386 25.8884 45.4442 27.0967 45.9998 28.4578C46.5553 29.819 46.8331 31.2495 46.8331 32.7495C46.8331 34.2495 46.5553 35.6801 45.9998 37.0412C45.4442 38.4023 44.6386 39.6106 43.5831 40.6662ZM47.4164 44.4995L45.4164 42.4995C46.722 41.194 47.7289 39.7009 48.4373 38.0203C49.1456 36.3398 49.4998 34.5828 49.4998 32.7495C49.4998 30.9162 49.1456 29.1592 48.4373 27.4787C47.7289 25.7981 46.722 24.3051 45.4164 22.9995L47.4164 20.9995C48.9998 22.5828 50.215 24.3815 51.0623 26.3953C51.9095 28.4092 52.3331 30.5273 52.3331 32.7495C52.3331 34.9717 51.9095 37.0898 51.0623 39.1037C50.215 41.1176 48.9998 42.9162 47.4164 44.4995Z" fill="white" />
-                                    </g>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1939_1003">
-                                        <rect width="35.2787" height="36.1607" fill="white" transform="translate(17.9998 17.9995)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span>Conexão estável e <br> sem interrupções</span>
-                    </div>
-                    <div class="card-link-dedicado">
-                        <div class="ico">
-                            <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.221191" y="0.483887" width="70.5574" height="70.5574" rx="35.2787" fill="#003DA6" />
-                                <g clip-path="url(#clip0_1939_1011)">
-                                    <mask id="mask0_1939_1011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="14" width="41" height="41">
-                                        <rect x="14.5" y="14.5249" width="40" height="40" fill="#D9D9D9" />
-                                    </mask>
-                                    <g>
-                                        <path d="M41.6667 51.3328C39.3611 51.3328 37.3958 50.5203 35.7708 48.8953C34.1458 47.2703 33.3333 45.3051 33.3333 42.9995C33.3333 40.694 34.1458 38.7287 35.7708 37.1037C37.3958 35.4787 39.3611 34.6662 41.6667 34.6662C43.9722 34.6662 45.9375 35.4787 47.5625 37.1037C49.1875 38.7287 50 40.694 50 42.9995C50 45.3051 49.1875 47.2703 47.5625 48.8953C45.9375 50.5203 43.9722 51.3328 41.6667 51.3328ZM33.3333 51.3328C29.4722 50.3606 26.2847 48.1453 23.7708 44.687C21.2569 41.2287 20 37.3884 20 33.1662V22.9995L33.3333 17.9995L46.6667 22.9995V32.4578C45.9444 32.0967 45.1319 31.819 44.2292 31.6245C43.3264 31.4301 42.4722 31.3328 41.6667 31.3328C38.4444 31.3328 35.6944 32.4717 33.4167 34.7495C31.1389 37.0273 30 39.7773 30 42.9995C30 44.7217 30.3264 46.2773 30.9792 47.6662C31.6319 49.0551 32.4583 50.2634 33.4583 51.2912C33.4306 51.2912 33.4097 51.2981 33.3958 51.312C33.3819 51.3259 33.3611 51.3328 33.3333 51.3328ZM40.8333 47.9995H42.5V43.8328H46.6667V42.1662H42.5V37.9995H40.8333V42.1662H36.6667V43.8328H40.8333V47.9995Z" fill="white" />
-                                    </g>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1939_1011">
-                                        <rect width="35.2787" height="36.1607" fill="white" transform="translate(17.8608 17.6821)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span>Segurança <br> robusta</span>
+                    <div class="body">
+                        <span class="titulo">Deezer</span>
+                        <span class="desc">
+                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e 
+                            descubra novos artistas com qualidade de som impecável.
+                        </span>
                     </div>
                 </div>
-                <div class="contain-btns">
-                    <a href="#" class="contratar-agr">
-                        <div class="ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.26 9.29125C9.98946 9.29125 9.46882 10.302 9.15615 10.302C9.07469 10.2986 8.99562 10.2735 8.9271 10.2293C8.34394 9.93696 7.83349 9.63519 7.3543 9.17709C6.95801 8.80189 6.521 8.23908 6.29267 7.74972C6.26116 7.70337 6.24282 7.64934 6.23959 7.59338C6.23959 7.35342 6.95946 6.90623 6.95946 6.50994C6.95946 6.40596 6.42865 4.99022 6.35448 4.81207C6.2505 4.54157 6.19887 4.45795 5.9182 4.45795C5.78222 4.45795 5.65643 4.42668 5.53281 4.42668C5.31322 4.42668 5.14743 4.5103 4.99037 4.65573C4.49009 5.12474 4.23996 5.6141 4.2196 6.30198V6.38487C4.20869 7.10474 4.56281 7.82243 4.9591 8.40632C5.85348 9.72972 6.78131 10.8859 8.2705 11.5621C8.71842 11.7708 9.75023 12.2078 10.2498 12.2078C10.8438 12.2078 11.8131 11.8333 12.0516 11.2494C12.1462 11.0095 12.2291 10.7186 12.2291 10.4583C12.2291 10.4161 12.229 10.3536 12.2072 10.302C12.1345 10.1769 10.4374 9.29125 10.26 9.29125ZM8.14543 14.8124C6.87511 14.8124 5.61498 14.427 4.5519 13.729L2.0309 14.5303L2.85403 12.1038C2.04201 10.9905 1.60412 9.64832 1.60334 8.27035C1.60334 4.66737 4.54099 1.72972 8.14543 1.72972C11.7499 1.72972 14.6882 4.66664 14.6882 8.26962C14.6882 11.8748 11.7506 14.8124 8.14543 14.8124ZM8.14543 0.416504C3.81167 0.416504 0.29231 3.93732 0.29231 8.26962C0.29231 9.69773 0.677695 11.104 1.41647 12.3227L0 16.5416L4.34394 15.1455C5.54003 15.8058 6.88762 16.1428 8.25373 16.1234C9.61985 16.1039 10.9573 15.7286 12.1341 15.0345C13.3109 14.3404 14.2864 13.3514 14.9643 12.1652C15.6423 10.9791 15.9992 9.6366 16 8.27035C16 3.93805 12.4792 0.416504 8.14543 0.416504Z" fill="white" />
-                            </svg>
-                        </div>
-                        <span>Contratar agora</span>
-                    </a>
-                    <a href="#" class="ver-ofertas">
-                        <span>Ver mais ofertas</span>
-                        <div class="ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <mask id="mask0_2006_404" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                                    <rect x="24" y="24.479" width="24" height="24" transform="rotate(-180 24 24.479)" fill="#D9D9D9" />
-                                </mask>
-                                <g>
-                                    <path d="M14 6.479L20 12.479L14 18.479L12.6 17.029L16.15 13.479L4 13.479L4 11.479L16.15 11.479L12.6 7.929L14 6.479Z" fill="black" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
+
+                <div class="card-serv">
+                    <div class="top">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/03/22/10/nature-7633454_640.jpg" alt="Deezer">
+                    </div>
+                    <div class="body">
+                        <span class="titulo">Deezer</span>
+                        <span class="desc">
+                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e 
+                            descubra novos artistas com qualidade de som impecável.
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="right">
-                <img src="/website/img/index/img-link-ded.png" alt="Link dedicado TurboLine">
-            </div>
+
+                <div class="card-serv">
+                    <div class="top">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/03/22/10/nature-7633454_640.jpg" alt="Deezer">
+                    </div>
+                    <div class="body">
+                        <span class="titulo">Deezer</span>
+                        <span class="desc">
+                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e 
+                            descubra novos artistas com qualidade de som impecável.
+                        </span>
+                    </div>
+                </div>
+
+
+            </fieldset>
+
+
+
         </div>
     </div>
 </section>
-<section class="beneficios-home">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- <section class="beneficios-home">
     <div class="container">
         <span class="titulo">
             A Internet que Transforma Sua Conexão em <strong>Alta Performance</strong>
@@ -750,8 +703,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             </button>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
+//require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
 ?>

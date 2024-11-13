@@ -1,4 +1,40 @@
 @charset "UTF-8";
+.rubberBand {
+  animation-name: rubberBand;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 section.banners-home {
   margin-top: 100px;
 }
@@ -731,222 +767,119 @@ section.quem-somos-home div.bottom-cards > div.card-inst > span.desc {
   font-weight: 400;
   line-height: 24px;
 }
-section.link-dedicado-home {
-  padding: 60px 0 40px;
-  background: #E3E3E3;
+section.servicos-home {
+  border: 2px solid red;
+  background: #f7f8fa;
+  padding: 100px 0;
 }
 @media (min-width: 768px) {
-  section.link-dedicado-home {
-    padding: 245px 0 135px;
+  section.servicos-home {
+    padding: 255px 0 75px;
   }
 }
 @media (min-width: 992px) {
-  section.link-dedicado-home {
-    padding: 180px 0 135px;
+  section.servicos-home {
+    padding: 200px 0 75px;
   }
 }
 @media (min-width: 1200px) {
-  section.link-dedicado-home {
-    padding: 245px 0 135px;
+  section.servicos-home {
+    padding: 185px 0 75px;
   }
 }
-section.link-dedicado-home div.grid {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  gap: 30px;
-}
-@media (min-width: 768px) {
-  section.link-dedicado-home div.grid {
-    flex-direction: row;
-    gap: 35px;
-  }
-}
-@media (min-width: 992px) {
-  section.link-dedicado-home div.grid {
-    gap: 75px;
-  }
-}
-@media (min-width: 768px) {
-  section.link-dedicado-home div.grid > div {
-    width: 100%;
-  }
-}
-section.link-dedicado-home div.grid > div.left {
-  order: 1;
-}
-section.link-dedicado-home div.grid > div.left > span {
+section.servicos-home > .container > div.top > span {
   display: block;
   color: #000;
+  text-align: center;
   font-style: normal;
-}
-section.link-dedicado-home div.grid > div.left > span.titulo {
-  font-size: 26px;
   font-weight: 400;
-  line-height: 130%;
-  width: 100%;
-  max-width: 300px;
-  padding-bottom: 30px;
+}
+section.servicos-home > .container > div.top > span.titulo {
+  font-size: 26px;
+  line-height: 33.8px;
+  padding-bottom: 8px;
 }
 @media (min-width: 768px) {
-  section.link-dedicado-home div.grid > div.left > span.titulo {
+  section.servicos-home > .container > div.top > span.titulo {
     font-size: 30px;
-    max-width: 100%;
+    line-height: 39px;
   }
 }
-section.link-dedicado-home div.grid > div.left > span.subtitulo {
+section.servicos-home > .container > div.top > span.desc {
   font-size: 16px;
-  font-weight: 700;
   line-height: 25.6px;
-  padding-bottom: 20px;
-}
-section.link-dedicado-home div.grid > div.left > span.desc {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25.6px;
-}
-section.link-dedicado-home div.grid > div.left > div.grid-cards {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  padding-top: 30px;
-  gap: 10px;
+  padding-bottom: 60px;
 }
 @media (min-width: 768px) {
-  section.link-dedicado-home div.grid > div.left > div.grid-cards {
-    padding-top: 40px;
+  section.servicos-home > .container > div.top > span.desc {
+    padding-bottom: 40px;
+  }
+}
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+@media (min-width: 768px) {
+  section.servicos-home > .container > div.top > fieldset.contain-cards-serv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
   }
 }
 @media (min-width: 992px) {
-  section.link-dedicado-home div.grid > div.left > div.grid-cards {
+  section.servicos-home > .container > div.top > fieldset.contain-cards-serv {
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 }
 @media (min-width: 1200px) {
-  section.link-dedicado-home div.grid > div.left > div.grid-cards {
-    max-width: 480px;
+  section.servicos-home > .container > div.top > fieldset.contain-cards-serv {
+    gap: 50px;
   }
 }
-section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-}
-section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > div.ico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-grow: 1;
-  height: 70px;
-  min-height: 70px !important;
-  max-height: 70px !important;
-}
-section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
-  display: block;
-  color: #003DA6;
-  text-align: center;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19.5px;
-}
-@media (min-width: 400px) {
-  section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
-    font-size: 11px;
+@media (min-width: 576px) {
+  section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv {
+    max-width: 370px;
+    margin: 0 auto;
   }
-}
-@media (min-width: 992px) {
-  section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
-    font-size: 13px;
-  }
-}
-@media (min-width: 1200px) {
-  section.link-dedicado-home div.grid > div.left > div.grid-cards > div.card-link-dedicado > span {
-    font-size: 15px;
-  }
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 23px;
-  padding-top: 30px;
-}
-@media (min-width: 1200px) {
-  section.link-dedicado-home div.grid > div.left > div.contain-btns {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 33px;
-  text-decoration: none;
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a > div.ico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a > span {
-  display: block;
-  font-style: normal;
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a.contratar-agr {
-  gap: 8px;
-  border-radius: 12px;
-  background: #003DA6;
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a.contratar-agr > span {
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a.ver-ofertas {
-  gap: 4px;
-}
-section.link-dedicado-home div.grid > div.left > div.contain-btns > a.ver-ofertas > span {
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.7px;
-  text-decoration-line: underline;
 }
 @media (min-width: 768px) {
-  section.link-dedicado-home div.grid > div.right {
-    order: 1;
+  section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv {
+    max-width: 100%;
   }
 }
-section.link-dedicado-home div.grid > div.right > img {
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv > div.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv > div.top > img {
   display: block;
   width: 100%;
-  max-width: 640px;
+  max-width: 100%;
   margin: 0 auto;
   object-fit: cover;
+  border-radius: 11.833px;
+  box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
 }
-@media (min-width: 768px) {
-  section.link-dedicado-home div.grid > div.right > img {
-    position: relative;
-    bottom: 60px;
-  }
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv > div.body > span {
+  display: block;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
 }
-@media (min-width: 1200px) {
-  section.link-dedicado-home div.grid > div.right > img {
-    bottom: 80px;
-  }
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv > div.body > span.titulo {
+  font-size: 18px;
+  line-height: 23.4px;
+  padding-bottom: 16px;
+}
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv > div.body > span.desc {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgba(0, 0, 0, 0.5);
 }
 section.beneficios-home {
   background: url("/website/img/index/bg-beneficios-mobille.png") no-repeat center center;

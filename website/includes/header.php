@@ -29,7 +29,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="/website/index.php">
+                <a class="navbar-brand rubberBand" href="/website/index.php">
                     <img src="/website/img/logo.svg" class="d-block mx-auto img-fluid" alt="">
                 </a>
                 <button class="menu navbar-toggler"
