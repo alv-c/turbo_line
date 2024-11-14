@@ -220,7 +220,8 @@ section.ofertas-home > div.container > div.contain-filtros-ofertas > button:nth-
 section.ofertas-home > div.container > div.contain-cards-ofertas {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 40px;
   padding-bottom: 35px;
@@ -242,14 +243,18 @@ section.ofertas-home > div.container > div.contain-cards-ofertas {
     gap: 80px 40px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna {
+  width: 100%;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta {
   width: 100%;
   max-width: 380px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
   border-radius: 10px;
+  margin: 0 auto;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.oferta::after {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.oferta::after {
   content: "Oferta por tempo limitado";
   position: absolute;
   left: 0;
@@ -260,7 +265,7 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   width: 100%;
   max-width: 215px;
   border-radius: 12px;
-  background: #F58220;
+  background: #1c1c1c;
   padding: 11px 10px 9px;
   color: #FFF;
   font-size: 14px;
@@ -270,13 +275,13 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.oferta::after {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.oferta::after {
     font-size: 16px;
     line-height: 19.2px;
     max-width: 260px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido::after {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido::after {
   content: "Mais vendida";
   position: absolute;
   left: 0;
@@ -287,7 +292,7 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   width: 100%;
   max-width: 215px;
   border-radius: 12px;
-  background: #F58220;
+  background: #1c1c1c;
   padding: 11px 10px 9px;
   color: #FFF;
   text-align: center;
@@ -297,57 +302,57 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido::after {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido::after {
     font-size: 16px;
     line-height: 19.2px;
     max-width: 260px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.header-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.header-card {
   background: #022E79;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.body-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.body-card {
   background: #003DA6;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.body-card > span.preco {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.body-card > span.preco {
   color: #fff;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.body-card > span.validade-oferta {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.body-card > span.validade-oferta {
   color: rgba(255, 255, 255, 0.5);
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.body-card > div.tipo-pag > div.ico > svg g path {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.body-card > div.tipo-pag > div.ico > svg g path {
   fill: #fff;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.body-card > div.tipo-pag > span {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.body-card > div.tipo-pag > span {
   color: rgba(255, 255, 255, 0.5);
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.footer-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.footer-card {
   background: #022E79;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.footer-card > div.ico > svg > rect {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.ico > svg > rect {
   stroke: #fff;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.footer-card > div.ico > svg g > path {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.ico > svg g > path {
   fill: #fff;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.footer-card > div.right-footer-card > span.beneficio {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.right-footer-card > span.beneficio {
   color: rgba(255, 255, 255, 0.5);
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta.mais-vendido > div.footer-card > div.right-footer-card > span.inclusao {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.right-footer-card > span.inclusao {
   color: #fff;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.header-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.header-card {
   background: #003DA6;
   padding: 20px 20px 25px;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.header-card > span {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.header-card > span {
   display: block;
   text-align: center;
   font-style: normal;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.header-card > span.subtitulo {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.header-card > span.subtitulo {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   font-weight: 400;
@@ -355,35 +360,35 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   padding-bottom: 8px;
 }
 @media (min-width: 600px) {
-  section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.header-card > span.subtitulo {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.header-card > span.subtitulo {
     font-size: 18px;
     line-height: 23.4px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.header-card > span.titulo {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.header-card > span.titulo {
   color: #FFF;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   text-transform: uppercase;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card {
   background: #fff;
   padding: 25px 20px 20px;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > span {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > span {
   display: block;
   text-align: center;
   font-style: normal;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > span.preco {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > span.preco {
   color: #003DA6;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
   text-transform: uppercase;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > span.validade-oferta {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > span.validade-oferta {
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
   font-weight: 400;
@@ -391,12 +396,12 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   padding-bottom: 25px;
 }
 @media (min-width: 600px) {
-  section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > span.validade-oferta {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > span.validade-oferta {
     font-size: 18px;
     line-height: 23.4px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > a.assinatura-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > a.assinatura-card {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -408,14 +413,14 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   white-space: nowrap;
   text-decoration: none;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > a.assinatura-card > div.ico {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > a.assinatura-card > div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   bottom: 1px;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > a.assinatura-card > span {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > a.assinatura-card > span {
   display: block;
   color: #FFF;
   font-size: 16px;
@@ -423,7 +428,7 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   font-weight: 500;
   line-height: 24px;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > div.tipo-pag {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > div.tipo-pag {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,15 +436,15 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   gap: 10px;
   margin-top: 15px;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > div.tipo-pag > div.ico {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > div.tipo-pag > div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > div.tipo-pag > div.ico > svg g path {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > div.tipo-pag > div.ico > svg g path {
   fill: #000;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > div.tipo-pag > span {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > div.tipo-pag > span {
   display: block;
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
@@ -448,52 +453,124 @@ section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta
   line-height: 20.8px;
 }
 @media (min-width: 600px) {
-  section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.body-card > div.tipo-pag > span {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > div.tipo-pag > span {
     font-size: 18px;
     line-height: 23.4px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card {
   padding: 24px 20px;
   background: #F5F5F5;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   gap: 8px;
-  overflow: hidden;
-  border-radius: 0px 0px 10px 10px;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.ico {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item:nth-child(n+2) {
+  margin-top: 35px;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.ico > svg > rect {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.ico > svg > rect {
   stroke: #000;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.ico > svg g > path {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.ico > svg g > path {
   fill: #000;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.right-footer-card > span {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span {
   display: block;
   font-size: 16px;
   line-height: 20.8px;
   font-style: normal;
 }
 @media (min-width: 600px) {
-  section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.right-footer-card > span {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span {
     font-size: 18px;
     line-height: 23.4px;
   }
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.right-footer-card > span.beneficio {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span.beneficio {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
-section.ofertas-home > div.container > div.contain-cards-ofertas div.card-oferta > div.footer-card > div.right-footer-card > span.inclusao {
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span.inclusao {
   color: #003DA6;
   font-weight: 700;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 420px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+@media (min-width: 600px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+@media (min-width: 992px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.ico > svg > rect {
+  stroke: #fff;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.ico > svg g > path {
+  fill: #fff;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.right-footer-card > span.beneficio {
+  color: rgba(255, 255, 255, 0.5);
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.right-footer-card > span.inclusao {
+  color: #fff;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.right > div.item-ico > img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 48px;
+  height: 48px;
+  object-fit: cover;
 }
 section.ofertas-home > div.container > div.contain-ver-mais {
   padding-bottom: 70px;
@@ -2094,6 +2171,7 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
   border-radius: 10px;
+  margin: 0 auto;
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.oferta::after {
   content: "Oferta por tempo limitado";
@@ -2106,7 +2184,7 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   width: 100%;
   max-width: 215px;
   border-radius: 12px;
-  background: #F58220;
+  background: #1c1c1c;
   padding: 11px 10px 9px;
   color: #FFF;
   font-size: 14px;
@@ -2133,7 +2211,7 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   width: 100%;
   max-width: 215px;
   border-radius: 12px;
-  background: #F58220;
+  background: #1c1c1c;
   padding: 11px 10px 9px;
   color: #FFF;
   text-align: center;
@@ -2170,16 +2248,16 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card {
   background: #022E79;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card > div.ico > svg > rect {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.ico > svg > rect {
   stroke: #fff;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card > div.ico > svg g > path {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.ico > svg g > path {
   fill: #fff;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card > div.right-footer-card > span.beneficio {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.right-footer-card > span.beneficio {
   color: rgba(255, 255, 255, 0.5);
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card > div.right-footer-card > span.inclusao {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.mais-vendido > div.footer-card div.item > div.right-footer-card > span.inclusao {
   color: #fff;
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.header-card {
@@ -2302,44 +2380,116 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card {
   padding: 24px 20px;
   background: #F5F5F5;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   gap: 8px;
-  overflow: hidden;
-  border-radius: 0px 0px 10px 10px;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.ico {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item:nth-child(n+2) {
+  margin-top: 35px;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.ico > svg > rect {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.ico > svg > rect {
   stroke: #000;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.ico > svg g > path {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.ico > svg g > path {
   fill: #000;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.right-footer-card > span {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span {
   display: block;
   font-size: 16px;
   line-height: 20.8px;
   font-style: normal;
 }
 @media (min-width: 600px) {
-  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.right-footer-card > span {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span {
     font-size: 18px;
     line-height: 23.4px;
   }
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.right-footer-card > span.beneficio {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span.beneficio {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
-section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card > div.right-footer-card > span.inclusao {
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item div.right-footer-card > span.inclusao {
   color: #003DA6;
   font-weight: 700;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 420px) {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+@media (min-width: 600px) {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+@media (min-width: 992px) {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.ico > svg > rect {
+  stroke: #fff;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.ico > svg g > path {
+  fill: #fff;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.right-footer-card > span.beneficio {
+  color: rgba(255, 255, 255, 0.5);
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.left div.right-footer-card > span.inclusao {
+  color: #fff;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.footer-card div.item.item-apps > div.right > div.item-ico > img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 48px;
+  height: 48px;
+  object-fit: cover;
 }
 
 section.bg-contato {

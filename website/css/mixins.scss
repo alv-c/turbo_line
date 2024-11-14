@@ -5,6 +5,7 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         position: relative;
         border-radius: 10px;
+        margin: 0 auto;
 
         &.oferta {
             &::after {
@@ -18,7 +19,7 @@
                 width: 100%;
                 max-width: 215px;
                 border-radius: 12px;
-                background: #F58220;
+                background: #1c1c1c;
                 padding: 11px 10px 9px;
                 color: #FFF;
                 font-size: 14px;
@@ -47,7 +48,7 @@
                 width: 100%;
                 max-width: 215px;
                 border-radius: 12px;
-                background: #F58220;
+                background: #1c1c1c;
                 padding: 11px 10px 9px;
                 color: #FFF;
                 text-align: center;
@@ -101,29 +102,31 @@
                 &.footer-card {
                     background: #022E79;
 
-                    >div {
-                        &.ico {
-                            >svg {
-                                >rect {
-                                    stroke: #fff;
-                                }
+                    div.item {
+                        >div {
+                            &.ico {
+                                >svg {
+                                    >rect {
+                                        stroke: #fff;
+                                    }
 
-                                g {
-                                    >path {
-                                        fill: #fff;
+                                    g {
+                                        >path {
+                                            fill: #fff;
+                                        }
                                     }
                                 }
                             }
-                        }
 
-                        &.right-footer-card {
-                            >span {
-                                &.beneficio {
-                                    color: rgba(255, 255, 255, .5);
-                                }
+                            &.right-footer-card {
+                                >span {
+                                    &.beneficio {
+                                        color: rgba(255, 255, 255, .5);
+                                    }
 
-                                &.inclusao {
-                                    color: #fff;
+                                    &.inclusao {
+                                        color: #fff;
+                                    }
                                 }
                             }
                         }
@@ -269,53 +272,146 @@
             &.footer-card {
                 padding: 24px 20px;
                 background: #F5F5F5;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                flex-wrap: nowrap;
-                gap: 8px;
                 overflow: hidden;
                 border-radius: 0px 0px 10px 10px;
 
-                >div {
-                    &.ico {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                div.item {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    gap: 8px;
 
-                        >svg {
-                            >rect {
-                                stroke: #000;
+                    &:nth-child(n + 2) {
+                        margin-top: 35px;
+                    }
+
+                    div {
+                        &.ico {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            >svg {
+                                >rect {
+                                    stroke: #000;
+                                }
+
+                                g {
+                                    >path {
+                                        fill: #000;
+                                    }
+                                }
                             }
+                        }
 
-                            g {
-                                >path {
-                                    fill: #000;
+                        &.right-footer-card {
+                            >span {
+                                display: block;
+                                font-size: 16px;
+                                line-height: 20.8px;
+                                font-style: normal;
+
+                                @media(min-width: 600px) {
+                                    font-size: 18px;
+                                    line-height: 23.4px;
+                                }
+
+                                &.beneficio {
+                                    color: rgba(0, 0, 0, .5);
+                                    font-weight: 400;
+                                }
+
+                                &.inclusao {
+                                    color: #003DA6;
+                                    font-weight: 700;
                                 }
                             }
                         }
                     }
 
-                    &.right-footer-card {
-                        >span {
-                            display: block;
-                            font-size: 16px;
-                            line-height: 20.8px;
-                            font-style: normal;
+                    &.item-apps {
+                        justify-content: space-between;
+                        flex-direction: column;
+                        align-items: flex-start;
 
-                            @media(min-width: 600px) {
-                                font-size: 18px;
-                                line-height: 23.4px;
+                        @media(min-width: 420px) {
+                            flex-direction: row;
+                            align-content: center;
+                        }
+
+                        @media(min-width: 600px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        @media(min-width: 768px) {
+                            flex-direction: row;
+                            align-content: center;
+                        }
+
+                        @media(min-width: 992px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        @media(min-width: 1200px) {
+                            flex-direction: row;
+                            align-content: center;
+                        }
+
+                        >div {
+                            &.left {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                gap: 8px;
+
+                                div {
+                                    &.ico {
+                                        >svg {
+                                            >rect {
+                                                stroke: #fff;
+                                            }
+
+                                            g {
+                                                >path {
+                                                    fill: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.right-footer-card {
+                                        >span {
+                                            &.beneficio {
+                                                color: rgba(255, 255, 255, .5);
+                                            }
+
+                                            &.inclusao {
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
                             }
 
-                            &.beneficio {
-                                color: rgba(0, 0, 0, .5);
-                                font-weight: 400;
-                            }
+                            &.right {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                gap: 8px;
 
-                            &.inclusao {
-                                color: #003DA6;
-                                font-weight: 700;
+                                >div.item-ico {
+                                    >img {
+                                        display: block;
+                                        margin: 0 auto;
+                                        width: 100%;
+                                        max-width: 48px;
+                                        height: 48px;
+                                        object-fit: cover;
+                                    }
+                                }
                             }
                         }
                     }

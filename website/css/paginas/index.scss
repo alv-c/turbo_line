@@ -198,7 +198,8 @@ section {
                 &.contain-cards-ofertas {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: stretch;
+                    justify-content: flex-start;
                     flex-wrap: nowrap;
                     gap: 40px;
                     padding-bottom: 35px;
@@ -217,7 +218,11 @@ section {
                         gap: 80px 40px;
                     }
 
-                    @include card-oferta;
+                    >div.coluna {
+                        width: 100%;
+
+                        @include card-oferta;
+                    }
                 }
 
                 &.contain-ver-mais {
