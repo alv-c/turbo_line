@@ -355,73 +355,73 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-
-
 <section class="servicos-home">
     <div class="container">
         <div class="top">
             <span class="titulo">Serviços Exclusivos para Uma <strong>Experiência Completa</strong></span>
             <span class="desc">
-                Em nossos planos, você conta com serviços adicionais trazendo entretenimento e aprendizado direto para você. 
+                Em nossos planos, você conta com serviços adicionais trazendo entretenimento e aprendizado direto para você.
             </span>
-
-
-
             <fieldset class="contain-cards-serv">
-
-
                 <div class="card-serv">
                     <div class="top">
-                        <img src="https://cdn.pixabay.com/photo/2022/12/03/22/10/nature-7633454_640.jpg" alt="Deezer">
+                        <img src="/website/img/index/serv-deezer.png" alt="Deezer">
                     </div>
                     <div class="body">
                         <span class="titulo">Deezer</span>
                         <span class="desc">
-                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e 
+                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e
                             descubra novos artistas com qualidade de som impecável.
                         </span>
                     </div>
                 </div>
-
                 <div class="card-serv">
                     <div class="top">
-                        <img src="https://cdn.pixabay.com/photo/2022/12/03/22/10/nature-7633454_640.jpg" alt="Deezer">
+                        <img src="/website/img/index/serv-looke.png" alt="Looke">
                     </div>
                     <div class="body">
                         <span class="titulo">Deezer</span>
                         <span class="desc">
-                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e 
+                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e
                             descubra novos artistas com qualidade de som impecável.
                         </span>
                     </div>
                 </div>
-
                 <div class="card-serv">
                     <div class="top">
-                        <img src="https://cdn.pixabay.com/photo/2022/12/03/22/10/nature-7633454_640.jpg" alt="Deezer">
+                        <img src="/website/img/index/serv-conhecimento.png" alt="Super conhecimento">
                     </div>
                     <div class="body">
                         <span class="titulo">Deezer</span>
                         <span class="desc">
-                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e 
+                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e
                             descubra novos artistas com qualidade de som impecável.
                         </span>
                     </div>
                 </div>
-
-
             </fieldset>
-
-
-
+        </div>
+        <div class="bottom">
+            <div class="grid-bottom">
+                <div class="left">
+                    <span class="titulo">Verifique a Disponibilidade da <strong>Internet na sua região</strong></span>
+                    <span class="desc">
+                        Descubra se a nossa fibra óptica de alta velocidade já chegou ao seu endereço. 
+                        Consulte agora e esteja um passo mais perto de uma internet rápida, estável e 
+                        preparada para todas as suas necessidades.
+                    </span>
+                    <div class="contain-btn">
+                        <a href="">Consultar disponibilidade</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="/website/img/index/bg-disponibilidade.png" alt="Disponibilidade Turbo Line">
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<!-- <section class="beneficios-home">
+<section class="beneficios-home">
     <div class="container">
         <span class="titulo">
             A Internet que Transforma Sua Conexão em <strong>Alta Performance</strong>
@@ -703,8 +703,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             </button>
         </div>
     </div>
-</section> -->
+</section>
 
 <?php
-//require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
 ?>

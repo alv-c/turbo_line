@@ -743,6 +743,8 @@ section.quem-somos-home div.bottom-cards > div.card-inst {
   background: #FFF;
   box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
   padding: 30px 35px;
+  position: relative;
+  z-index: 1;
 }
 section.quem-somos-home div.bottom-cards > div.card-inst > div.ico {
   display: flex;
@@ -768,9 +770,9 @@ section.quem-somos-home div.bottom-cards > div.card-inst > span.desc {
   line-height: 24px;
 }
 section.servicos-home {
-  border: 2px solid red;
   background: #f7f8fa;
   padding: 100px 0;
+  position: relative;
 }
 @media (min-width: 768px) {
   section.servicos-home {
@@ -785,6 +787,30 @@ section.servicos-home {
 @media (min-width: 1200px) {
   section.servicos-home {
     padding: 185px 0 75px;
+  }
+}
+@media (min-width: 992px) {
+  section.servicos-home::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    width: calc(50% - 200px);
+    height: 285px;
+    border-radius: 100px 0px 0px 100px;
+    background: #003DA6;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  section.servicos-home::after {
+    height: 350px;
+    width: calc(50% - 245px);
+  }
+}
+@media (min-width: 992px) and (min-width: 1300px) {
+  section.servicos-home::after {
+    height: 375px;
+    width: calc(50% - 260px);
   }
 }
 section.servicos-home > .container > div.top > span {
@@ -880,6 +906,66 @@ section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div
   font-size: 16px;
   line-height: 25.6px;
   color: rgba(0, 0, 0, 0.5);
+}
+section.servicos-home > .container > div.bottom {
+  padding-top: 55px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+@media (min-width: 992px) {
+  section.servicos-home > .container > div.bottom {
+    display: block;
+  }
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 53px;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div {
+  width: 100%;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div.left > span {
+  display: block;
+  color: #000;
+  font-style: normal;
+  padding-bottom: 30px;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div.left > span.titulo {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div.left > span.desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div.left > div.contain-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div.left > div.contain-btn > a {
+  display: inline-block;
+  padding: 12px 33px 9px 33px;
+  border-radius: 12px;
+  background: #003DA6;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+section.servicos-home > .container > div.bottom > div.grid-bottom > div.right > img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 0 0 auto;
+  object-fit: cover;
 }
 section.beneficios-home {
   background: url("/website/img/index/bg-beneficios-mobille.png") no-repeat center center;

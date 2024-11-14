@@ -479,6 +479,8 @@ section {
                     background: #FFF;
                     box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
                     padding: 30px 35px;
+                    position: relative;
+                    z-index: 1;
 
                     >div.ico {
                         display: flex;
@@ -512,9 +514,9 @@ section {
     }
 
     &.servicos-home {
-        border: 2px solid red;
         background: #f7f8fa;
         padding: 100px 0;
+        position: relative;
 
         @media(min-width: 768px) {
             padding: 255px 0 75px;
@@ -526,6 +528,29 @@ section {
 
         @media(min-width: 1200px) {
             padding: 185px 0 75px;
+        }
+
+        @media(min-width: 992px) {
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 130px;
+                width: calc(50% - 200px);
+                height: 285px;
+                border-radius: 100px 0px 0px 100px;
+                background: #003DA6;
+
+                @media(min-width: 1200px) {
+                    height: 350px;
+                    width: calc(50% - 245px);
+                }
+
+                @media(min-width: 1300px) {
+                    height: 375px;
+                    width: calc(50% - 260px);
+                }
+            }
         }
 
         >.container {
@@ -590,7 +615,7 @@ section {
                             @media(min-width: 768px) {
                                 max-width: 100%;
                             }
-                            
+
                             >div {
                                 &.top {
                                     display: flex;
@@ -632,6 +657,79 @@ section {
                             }
                         }
                     }
+                }
+
+                &.bottom {
+                    padding-top: 55px;
+                    position: relative;
+                    z-index: 1;
+                    display: none;
+
+                    @media(min-width: 992px) {
+                        display: block;
+                    }
+
+                    >div.grid-bottom {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 53px;
+
+                        >div {
+                            width: 100%;
+
+                            &.left {
+                                >span {
+                                    display: block;
+                                    color: #000;
+                                    font-style: normal;
+                                    padding-bottom: 30px;
+
+                                    &.titulo {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        line-height: 39px;
+                                    }
+
+                                    &.desc {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 25.6px;
+                                    }
+                                }
+
+                                >div.contain-btn {
+                                    display: flex;
+                                    justify-content: flex-start;
+
+                                    >a {
+                                        display: inline-block;
+                                        padding: 12px 33px 9px 33px;
+                                        border-radius: 12px;
+                                        background: #003DA6;
+                                        text-decoration: none;
+                                        color: #FFF;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+
+                            &.right {
+                                >img {
+                                    display: block;
+                                    width: 100%;
+                                    max-width: 600px;
+                                    margin: 0 0 0 auto;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }
