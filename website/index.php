@@ -410,8 +410,10 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <div class="body">
                         <span class="titulo">Deezer</span>
                         <span class="desc">
-                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e
-                            descubra novos artistas com qualidade de som impecável.
+                            Com o Deezer Premium, aproveite suas músicas favoritas onde e quando quiser! Ouça offline, 
+                            crie playlists personalizadas e explore funcionalidades incríveis, como o SongCatcher, 
+                            para identificar faixas instantaneamente, e o recurso de Letras, perfeito para cantar 
+                            junto com suas canções preferidas.
                         </span>
                     </div>
                 </div>
@@ -420,10 +422,11 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         <img src="/website/img/index/serv-looke.png" alt="Looke">
                     </div>
                     <div class="body">
-                        <span class="titulo">Deezer</span>
+                        <span class="titulo">Looke</span>
                         <span class="desc">
-                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e
-                            descubra novos artistas com qualidade de som impecável.
+                            O Looke é uma plataforma prática e acessível, com um catálogo variado de filmes, series, 
+                            documentários, programas de TV, conteúdo infantil e shows musicais. Permite assistir a 
+                            conteúdos variados, garantindo uma experiência incrível e dinâmica para você e sua familia.
                         </span>
                     </div>
                 </div>
@@ -432,10 +435,12 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         <img src="/website/img/index/serv-conhecimento.png" alt="Super conhecimento">
                     </div>
                     <div class="body">
-                        <span class="titulo">Deezer</span>
+                        <span class="titulo">Super Conhecimento</span>
                         <span class="desc">
-                            Tenha milhões de músicas ao seu alcance. Ouça suas playlists favoritas e
-                            descubra novos artistas com qualidade de som impecável.
+                            Na SC, acreditamos no avanço da educação e tecnologia. Aqui você encontra 
+                            conteúdos exclusivos de forma prática, fácil e transformadora te apoiando a 
+                            crescer. Tudo isso com certificado e flexibilidade para estudar no seu ritmo, 
+                            de um jeito que funcione melhor para você e sua família.
                         </span>
                     </div>
                 </div>

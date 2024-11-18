@@ -64,7 +64,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                             <div class="custom-control custom-checkbox mr-sm-2">
                                 <input type="checkbox" name="aceite_termos" class="custom-control-input" id="form-chck-termos">
                                 <label class="custom-control-label" for="form-chck-termos">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+                                    Eu li e concordo com os termos de uso
                                 </label>
                             </div>
                         </div>
