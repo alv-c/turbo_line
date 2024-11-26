@@ -63,7 +63,7 @@
                         </li>
                     </ul>
                     <form class="form-inline" id="contain-right-btns-nav">
-                        <button class="btn-nav-right" id="area-cliente" type="button">
+                        <button class="btn-nav-right" id="area-cliente" type="button" onclick="window.location.href='https://ixc.turbolinenet.com.br/central_assinante_web/login'">
                             <div class="ico">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="lock">

@@ -35,6 +35,142 @@
     transform: scale3d(1, 1, 1);
   }
 }
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-bottom {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tilt-in-fwd-tl {
+  0% {
+    -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
+    transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-fwd-tl {
+  0% {
+    -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
+    transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
 section.banners-home {
   margin-top: 100px;
 }
@@ -153,6 +289,7 @@ section.ofertas-home > div.container > span.titulo {
   font-size: 26px;
   line-height: 33.8px;
   padding-bottom: 12px;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   section.ofertas-home > div.container > span.titulo {
@@ -253,6 +390,7 @@ section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna di
   position: relative;
   border-radius: 10px;
   margin: 0 auto;
+  opacity: 0;
 }
 section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.oferta::after {
   content: "Oferta por tempo limitado";
@@ -612,6 +750,32 @@ section.ofertas-home > div.container > div.contain-ver-mais > button.btn-ver-mai
   justify-content: center;
   align-items: center;
 }
+section.ofertas-home.animacao > div.container > span.titulo {
+  animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna > div.card-oferta {
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna > div.card-oferta > div.body-card > span.preco {
+  animation: puff-in-bottom 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 1.8s;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna > div.card-oferta > div.body-card > a.assinatura-card {
+  animation: puff-in-bottom 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 1s;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna:nth-child(2) > div.card-oferta {
+  animation-delay: 0.4s;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna:nth-child(2) > div.card-oferta > div.body-card > a.assinatura-card {
+  animation-delay: 1.2s;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna:nth-child(3) > div.card-oferta {
+  animation-delay: 0.6s;
+}
+section.ofertas-home.animacao > div.container > div.contain-cards-ofertas > div.coluna:nth-child(3) > div.card-oferta > div.body-card > a.assinatura-card {
+  animation-delay: 1.4s;
+}
 section.quem-somos-home {
   background: url("/website/img/index/bg-azul-mobille.jpg") no-repeat center center;
   background-size: 100% 100%;
@@ -655,6 +819,7 @@ section.quem-somos-home div.top > div.col-left > img {
   width: 100%;
   max-width: 610px;
   object-fit: cover;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   section.quem-somos-home div.top > div.col-left > img {
@@ -822,6 +987,7 @@ section.quem-somos-home div.bottom-cards > div.card-inst {
   padding: 30px 35px;
   position: relative;
   z-index: 1;
+  opacity: 0;
 }
 section.quem-somos-home div.bottom-cards > div.card-inst > div.ico {
   display: flex;
@@ -845,6 +1011,21 @@ section.quem-somos-home div.bottom-cards > div.card-inst > span.desc {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+section.quem-somos-home.animacao div.top > div.col-left > img {
+  animation: tilt-in-fwd-tl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+section.quem-somos-home.animacao div.top > div.col-right > span.titulo {
+  animation-name: text-focus-in;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+section.quem-somos-home.animacao div.bottom-cards > div.card-inst {
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 section.servicos-home {
   background: #f7f8fa;
@@ -2172,6 +2353,7 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   position: relative;
   border-radius: 10px;
   margin: 0 auto;
+  opacity: 0;
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.oferta::after {
   content: "Oferta por tempo limitado";

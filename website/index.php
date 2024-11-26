@@ -4,7 +4,7 @@ $pagina = 'inicial';
 require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
 ?>
 
-<section class="banners-home">
+<section class="banners-home skip-animation-js">
     <div class="aligner">
         <div id="carousel-banners" class="owl-carousel owl-theme">
             <div class="item">
@@ -39,7 +39,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<section class="ofertas-home">
+<section class="ofertas-home" data-animation="true">
     <div class="container">
         <span class="titulo">
             Ofertas por tempo limitado, <span class="destaque">assine agora mesmo</span>
@@ -289,7 +289,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<section class="quem-somos-home">
+<section class="quem-somos-home" data-animation="true">
     <div class="container">
         <div class="top">
             <div class="col-left">
@@ -395,7 +395,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<section class="servicos-home">
+<section class="servicos-home" data-animation="true">
     <div class="container">
         <div class="top">
             <span class="titulo">Serviços Exclusivos para Uma <strong>Experiência Completa</strong></span>
@@ -466,7 +466,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<section class="beneficios-home">
+<section class="beneficios-home" data-animation="true">
     <div class="container">
         <span class="titulo">
             A Internet que Transforma Sua Conexão em <strong>Alta Performance</strong>

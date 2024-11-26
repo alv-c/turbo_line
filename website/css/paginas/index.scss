@@ -125,6 +125,7 @@ section {
                     font-size: 26px;
                     line-height: 33.8px;
                     padding-bottom: 12px;
+                    opacity: 0;
 
                     @media(min-width: 768px) {
                         text-align: center;
@@ -269,6 +270,62 @@ section {
                 }
             }
         }
+
+        &.animacao {
+            >div.container {
+                >span {
+                    &.titulo {
+                        animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    }
+                }
+
+                >div {
+                    &.contain-cards-ofertas {
+                        >div.coluna {
+                            >div.card-oferta {
+                                animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+                                >div.body-card {
+                                    >span.preco {
+                                        animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                                        animation-delay: 1.8s;
+                                    }
+
+                                    >a.assinatura-card {
+                                        animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                                        animation-delay: 1s;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                >div.card-oferta {
+                                    animation-delay: .4s;
+
+                                    >div.body-card {
+                                        >a.assinatura-card {
+                                            animation-delay: 1.2s;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                >div.card-oferta {
+                                    animation-delay: .6s;
+
+                                    >div.body-card {
+                                        >a.assinatura-card {
+                                            animation-delay: 1.4s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &.quem-somos-home {
@@ -314,6 +371,7 @@ section {
                             width: 100%;
                             max-width: 610px;
                             object-fit: cover;
+                            opacity: 0;
 
                             @media (min-width: 768px) {
                                 min-width: 310px;
@@ -486,6 +544,7 @@ section {
                     padding: 30px 35px;
                     position: relative;
                     z-index: 1;
+                    opacity: 0;
 
                     >div.ico {
                         display: flex;
@@ -512,6 +571,38 @@ section {
                             font-weight: 400;
                             line-height: 24px;
                         }
+                    }
+                }
+            }
+        }
+
+        &.animacao {
+            div {
+                &.top {
+                    >div {
+                        &.col-left {
+                            >img {
+                                animation: tilt-in-fwd-tl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            }
+                        }
+
+                        &.col-right {
+                            >span.titulo {
+                                animation-name: text-focus-in;
+                                animation-duration: 1s;
+                                animation-timing-function: linear;
+                                animation-delay: 0s;
+                                animation-iteration-count: 1;
+                                animation-direction: normal;
+                                animation-fill-mode: none;
+                            }
+                        }
+                    }
+                }
+
+                &.bottom-cards {
+                    >div.card-inst {
+                        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                     }
                 }
             }
