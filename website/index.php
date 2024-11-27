@@ -319,7 +319,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 </div>
             </div>
         </div>
-        <div class="bottom-cards">
+        <div class="bottom-cards" data-animation="true">
             <div class="card-inst">
                 <div class="ico">
                     <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -395,9 +395,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<section class="servicos-home" data-animation="true">
+<section class="servicos-home">
     <div class="container">
-        <div class="top">
+        <div class="top" data-animation="true">
             <span class="titulo">Serviços Exclusivos para Uma <strong>Experiência Completa</strong></span>
             <span class="desc">
                 Em nossos planos, você conta com serviços adicionais trazendo entretenimento e aprendizado direto para você.
@@ -410,9 +410,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <div class="body">
                         <span class="titulo">Deezer</span>
                         <span class="desc">
-                            Com o Deezer Premium, aproveite suas músicas favoritas onde e quando quiser! Ouça offline, 
-                            crie playlists personalizadas e explore funcionalidades incríveis, como o SongCatcher, 
-                            para identificar faixas instantaneamente, e o recurso de Letras, perfeito para cantar 
+                            Com o Deezer Premium, aproveite suas músicas favoritas onde e quando quiser! Ouça offline,
+                            crie playlists personalizadas e explore funcionalidades incríveis, como o SongCatcher,
+                            para identificar faixas instantaneamente, e o recurso de Letras, perfeito para cantar
                             junto com suas canções preferidas.
                         </span>
                     </div>
@@ -424,8 +424,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <div class="body">
                         <span class="titulo">Looke</span>
                         <span class="desc">
-                            O Looke é uma plataforma prática e acessível, com um catálogo variado de filmes, series, 
-                            documentários, programas de TV, conteúdo infantil e shows musicais. Permite assistir a 
+                            O Looke é uma plataforma prática e acessível, com um catálogo variado de filmes, series,
+                            documentários, programas de TV, conteúdo infantil e shows musicais. Permite assistir a
                             conteúdos variados, garantindo uma experiência incrível e dinâmica para você e sua familia.
                         </span>
                     </div>
@@ -437,9 +437,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <div class="body">
                         <span class="titulo">Super Conhecimento</span>
                         <span class="desc">
-                            Na SC, acreditamos no avanço da educação e tecnologia. Aqui você encontra 
-                            conteúdos exclusivos de forma prática, fácil e transformadora te apoiando a 
-                            crescer. Tudo isso com certificado e flexibilidade para estudar no seu ritmo, 
+                            Na SC, acreditamos no avanço da educação e tecnologia. Aqui você encontra
+                            conteúdos exclusivos de forma prática, fácil e transformadora te apoiando a
+                            crescer. Tudo isso com certificado e flexibilidade para estudar no seu ritmo,
                             de um jeito que funcione melhor para você e sua família.
                         </span>
                     </div>
@@ -619,10 +619,10 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
 
             <div class="item-cliente">
                 <div class="top">
-                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
                     <span class="desc-item">
-                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
-                        placerat pulvinar at aliquam mattis adipiscing sed.
+                        Estou gostando muito do serviço, ficou como eu esperava! Muito atenciosos e tudo
+                        funcionando, além do ótimo atendimento da Stela.
                     </span>
                 </div>
                 <div class="bottom">
@@ -632,18 +632,17 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </svg>
                     </div>
                     <div class="right">
-                        <span class="titulo">Lorem ipsum </span>
-                        <span class="subtitulo">Gerente de vendas </span>
+                        <span class="titulo">Erick Oliveira</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
                     </div>
                 </div>
             </div>
 
             <div class="item-cliente">
                 <div class="top">
-                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
                     <span class="desc-item">
-                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
-                        placerat pulvinar at aliquam mattis adipiscing sed.
+                        Ótimo serviço. Internet chegando 100% do plano contratado, atendimento nota 10!!!
                     </span>
                 </div>
                 <div class="bottom">
@@ -653,18 +652,18 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </svg>
                     </div>
                     <div class="right">
-                        <span class="titulo">Lorem ipsum </span>
-                        <span class="subtitulo">Gerente de vendas </span>
+                        <span class="titulo">Geraldo</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
                     </div>
                 </div>
             </div>
 
             <div class="item-cliente">
                 <div class="top">
-                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
                     <span class="desc-item">
-                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
-                        placerat pulvinar at aliquam mattis adipiscing sed.
+                        É muito bom. O atendimento é ótimo, excelente. A internet é muito boa nunca deu 
+                        poblema.
                     </span>
                 </div>
                 <div class="bottom">
@@ -674,18 +673,17 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </svg>
                     </div>
                     <div class="right">
-                        <span class="titulo">Lorem ipsum </span>
-                        <span class="subtitulo">Gerente de vendas </span>
+                        <span class="titulo">Khauan Alves</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
                     </div>
                 </div>
             </div>
 
             <div class="item-cliente">
                 <div class="top">
-                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
                     <span class="desc-item">
-                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
-                        placerat pulvinar at aliquam mattis adipiscing sed.
+                        Ótimo atendimento, preço justo, a internet atende nas minhas demandas do dia a dia.
                     </span>
                 </div>
                 <div class="bottom">
@@ -695,18 +693,18 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </svg>
                     </div>
                     <div class="right">
-                        <span class="titulo">Lorem ipsum </span>
-                        <span class="subtitulo">Gerente de vendas </span>
+                        <span class="titulo">Cyntia Lazaro Cardoso</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
                     </div>
                 </div>
             </div>
 
             <div class="item-cliente">
                 <div class="top">
-                    <span class="titulo-item">Lorem ipsum dolor sit amet</span>
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
                     <span class="desc-item">
-                        Lorem ipsum dolor sit amet consectetur. Non augue eu consequat tincidunt. Tempor ac
-                        placerat pulvinar at aliquam mattis adipiscing sed.
+                        Atendimento fantástico tanto da equipe de Suporte (Wilson) quanto da senhora 
+                        Kelly e Luana Morais. Aqui em nosso condomínio agora só eles que vão nos atender.
                     </span>
                 </div>
                 <div class="bottom">
@@ -716,8 +714,112 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                         </svg>
                     </div>
                     <div class="right">
-                        <span class="titulo">Lorem ipsum </span>
-                        <span class="subtitulo">Gerente de vendas </span>
+                        <span class="titulo">Daniel Alves Diniz Macedo</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
+                    <span class="desc-item">
+                        Ótimo atendimento, sempre prestativos e solucionam o que solicito, ja uso há algum 
+                        tempo e recomendo a todos. Super indico.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Weniskley Alves</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
+                    <span class="desc-item">
+                        Eu sempre tive receio dessas empresas de internet menores. Porém quando me mudei, era a única
+                        opção que tinha e foi aí que conheci a TurboLine: ótima empresa, velocidade maravilhosa.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Luan Goulart</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
+                    <span class="desc-item">
+                        Fui muito bem atendida. Sempre que preciso eles me atendem super bem. Velocidade 
+                        100% e atendimento do técnico foi ótimo, super educado.
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Divina Duarte</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
+                    <span class="desc-item">
+                        Empresa Top, atendimento super rápido!
+                        Parabéns a equipe Turbo line, a melhor Internet da região de Aparecida! Preço bom!!!
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Jonhatan Alves</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-cliente">
+                <div class="top">
+                    <!-- <span class="titulo-item">Lorem ipsum dolor sit amet</span> -->
+                    <span class="desc-item">
+                        Instalação rápida e com qualidade, internet com excelente velocidade, recomendo!
+                    </span>
+                </div>
+                <div class="bottom">
+                    <div class="ico">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="44" rx="10" fill="#003DA6" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <span class="titulo">Wendell Araujo dos Santos</span>
+                        <!-- <span class="subtitulo">Gerente de vendas </span> -->
                     </div>
                 </div>
             </div>

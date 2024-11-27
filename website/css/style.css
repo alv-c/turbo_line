@@ -171,6 +171,22 @@
     opacity: 1;
   }
 }
+@keyframes rotate-in-2-br-ccw {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
 section.banners-home {
   margin-top: 100px;
 }
@@ -1024,7 +1040,7 @@ section.quem-somos-home.animacao div.top > div.col-right > span.titulo {
   animation-direction: normal;
   animation-fill-mode: none;
 }
-section.quem-somos-home.animacao div.bottom-cards > div.card-inst {
+section.quem-somos-home div.bottom-cards.animacao > div.card-inst {
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 section.servicos-home {
@@ -1123,6 +1139,9 @@ section.servicos-home > .container > div.top > fieldset.contain-cards-serv {
     gap: 50px;
   }
 }
+section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv {
+  opacity: 0;
+}
 @media (min-width: 576px) {
   section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div.card-serv {
     max-width: 370px;
@@ -1164,6 +1183,9 @@ section.servicos-home > .container > div.top > fieldset.contain-cards-serv > div
   font-size: 16px;
   line-height: 25.6px;
   color: rgba(0, 0, 0, 0.5);
+}
+section.servicos-home > .container > div.top.animacao > fieldset.contain-cards-serv > div.card-serv {
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 section.servicos-home > .container > div.bottom {
   padding-top: 55px;
@@ -1379,6 +1401,21 @@ section.beneficios-home div.contain-card-benef > div.card-benef > div.bottom spa
     font-size: 14px;
   }
 }
+section.beneficios-home.animacao div.contain-card-benef > div.card-benef {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+section.beneficios-home.animacao div.contain-card-benef > div.card-benef:nth-child(2) {
+  animation-delay: 0.2s;
+}
+section.beneficios-home.animacao div.contain-card-benef > div.card-benef:nth-child(3) {
+  animation-delay: 0.4s;
+}
+section.beneficios-home.animacao div.contain-card-benef > div.card-benef:nth-child(4) {
+  animation-delay: 0.6s;
+}
 section.clientes-home {
   padding: 55px 0 0;
   background: #F7F8FA;
@@ -1454,10 +1491,18 @@ section.clientes-home .container-center-left > div.contain-top > div.top-right .
     position: static !important;
   }
 }
+section.clientes-home .container-center-left > div#carousel-clientes .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
 section.clientes-home .container-center-left > div#carousel-clientes .owl-item {
   padding: 10px 10px 10px 5px;
+  display: flex;
+  flex-grow: 1;
 }
 section.clientes-home .container-center-left > div#carousel-clientes div.item-cliente {
+  display: flex;
+  flex-direction: column;
   border-radius: 19px;
   background: #FFF;
   box-shadow: 0px 0px 8.6px 0px rgba(0, 0, 0, 0.15);
@@ -1466,11 +1511,18 @@ section.clientes-home .container-center-left > div#carousel-clientes div.item-cl
   max-width: 320px;
   padding: 40px 35px;
 }
+section.clientes-home .container-center-left > div#carousel-clientes div.item-cliente > div {
+  width: 100%;
+}
+section.clientes-home .container-center-left > div#carousel-clientes div.item-cliente > div.top {
+  flex-grow: 1;
+}
 section.clientes-home .container-center-left > div#carousel-clientes div.item-cliente > div.top > span {
   display: block;
   font-style: normal;
   color: #000;
-  font-size: 16px;
+  font-size: 12.5px;
+  text-align: left;
 }
 section.clientes-home .container-center-left > div#carousel-clientes div.item-cliente > div.top > span.titulo-item {
   font-weight: 700;
