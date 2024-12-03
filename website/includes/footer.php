@@ -40,7 +40,7 @@
                         Conecte-se com a Turboline!
                     </span>
                     <div class="contain-redes-sociais">
-                        <a href="">
+                        <a href="https://www.instagram.com/turbolineinternet/" target="_blank">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22.095" cy="22.095" r="22.095" fill="white" />
                                 <g clip-path="url(#clip0_1939_2392)">
@@ -55,7 +55,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="">
+                        <a href="https://www.facebook.com/people/Turboline-internet-fibra-optica/61563264881233/?mibextid=LQQJ4d&rdid=430FkK8MdWRSwPNf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FiGwnLpyQQZaWXsku%2F%3Fmibextid%3DLQQJ4d" target="_blank">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22.285" cy="22.095" r="22.095" fill="white" />
                                 <g clip-path="url(#clip0_1939_2399)">
@@ -68,7 +68,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="">
+                        <!-- <a href="" target="_blank">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22.4749" cy="22.095" r="22.095" fill="white" />
                                 <g clip-path="url(#clip0_1939_2404)">
@@ -80,30 +80,30 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="contain-right">
                     <div class="coluna">
                         <span class="titulo-col">Árvore do site</span>
-                        <a href="" class="item-col">Home</a>
-                        <a href="" class="item-col">Institucional</a>
-                        <a href="" class="item-col">Planos</a>
-                        <a href="" class="item-col">Contato</a>
+                        <a href="./index.php" class="item-col">Home</a>
+                        <a href="./institucional.php" class="item-col">Institucional</a>
+                        <a href="./planos.php" class="item-col">Planos</a>
+                        <a href="./contato.php" class="item-col">Contato</a>
                     </div>
                     <div class="coluna">
                         <span class="titulo-col">Institucional</span>
-                        <a href="" class="item-col">Institucional</a>
-                        <a href="" class="item-col">Trabalhe conosco</a>
-                        <a href="" class="item-col">Blog</a>
+                        <a href="./institucional.php" class="item-col">Institucional</a>
+                        <a href="https://wa.me/556230943385" class="item-col" target="_blank">Trabalhe conosco</a>
+                        <!-- <a href="" class="item-col">Blog</a> -->
                     </div>
                     <div class="coluna">
                         <span class="titulo-col">Cliente</span>
-                        <a href="" class="item-col">Área do cliente</a>
+                        <a href="https://ixc.turbolinenet.com.br/central_assinante_web/login" class="item-col" target="_blank">Área do cliente</a>
                     </div>
                     <div class="coluna">
                         <span class="titulo-col">Contato</span>
-                        <a href="" class="item-col-ico">
+                        <a href="tel:+556230943385" class="item-col-ico">
                             <div class="ico">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                                     <path d="M12.877 3.62253C11.7262 2.46021 10.1979 1.74741 8.5678 1.61268C6.9377 1.47795 5.31311 1.93016 3.98706 2.88776C2.66102 3.84536 1.72082 5.2453 1.33605 6.83506C0.951279 8.42482 1.14727 10.0997 1.88868 11.5577L1.1609 15.0911C1.15335 15.1262 1.15313 15.1626 1.16027 15.1978C1.16741 15.2331 1.18174 15.2665 1.20238 15.2959C1.23261 15.3406 1.27576 15.3751 1.32607 15.3946C1.37638 15.4141 1.43145 15.4179 1.48394 15.4053L4.94687 14.5845C6.40075 15.3071 8.06385 15.4905 9.64026 15.102C11.2167 14.7136 12.6041 13.7784 13.5557 12.4629C14.5074 11.1475 14.9614 9.53711 14.8372 7.91831C14.7129 6.29951 14.0183 4.77729 12.877 3.62253ZM11.7973 12.2403C11.0011 13.0343 9.97571 13.5584 8.86578 13.7388C7.75584 13.9192 6.61728 13.7468 5.61054 13.2458L5.12787 13.007L3.00486 13.5098L3.01115 13.4834L3.45108 11.3466L3.21477 10.8802C2.70037 9.86997 2.51891 8.72283 2.69638 7.60313C2.87386 6.48343 3.40116 5.44863 4.20275 4.64695C5.20996 3.64005 6.57584 3.07441 8.00003 3.07441C9.42422 3.07441 10.7901 3.64005 11.7973 4.64695C11.8059 4.65679 11.8151 4.66603 11.825 4.67461C12.8197 5.6841 13.375 7.04591 13.3698 8.46313C13.3646 9.88036 12.7994 11.2381 11.7973 12.2403Z" fill="white" />
@@ -144,7 +144,7 @@
         </section>
         <section class="development">
             <div class="container">
-                <a href="https://wa.me/5562991733837" target="_blank">Desenvolvido por ÁC Developer</a>
+                <a href="https://wa.me/5562991733837" target="_blank">Desenvolvido por Amaral Desenvolvimento</a>
             </div>
         </section>
         <script>

@@ -8,7 +8,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         <span class="titulo">Planos</span>
     </div>
 </section>
-<section class="listagem-planos">
+<section class="listagem-planos" data-animation="true">
     <div class="container">
         <span class="titulo">Ofertas por tempo limitado, <strong>assine agora mesmo</strong></span>
         <span class="desc">

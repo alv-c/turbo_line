@@ -11,6 +11,11 @@ $(document).ready(function () {
         case 'contato':
             $.getScript("/website/js/paginas/contato.js");
             break;
+
+        case 'planos':
+            $.getScript("/website/js/paginas/planos.js");
+            break;
+            
     }
 });
 

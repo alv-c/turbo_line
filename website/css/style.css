@@ -2725,6 +2725,29 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   height: 48px;
   object-fit: cover;
 }
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna > div.card-oferta {
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna > div.card-oferta > div.body-card > span.preco {
+  animation: puff-in-bottom 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 1.8s;
+}
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna > div.card-oferta > div.body-card > a.assinatura-card {
+  animation: puff-in-bottom 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 1s;
+}
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna:nth-child(2) > div.card-oferta {
+  animation-delay: 0.4s;
+}
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna:nth-child(2) > div.card-oferta > div.body-card > a.assinatura-card {
+  animation-delay: 1.2s;
+}
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna:nth-child(3) > div.card-oferta {
+  animation-delay: 0.6s;
+}
+section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna:nth-child(3) > div.card-oferta > div.body-card > a.assinatura-card {
+  animation-delay: 1.4s;
+}
 
 section.bg-contato {
   margin-top: 130px;
