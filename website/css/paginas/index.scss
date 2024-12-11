@@ -223,6 +223,10 @@ section {
                         width: 100%;
 
                         @include card-oferta;
+
+                        &:nth-last-child(-n + 3) {
+                            display: none;
+                        }
                     }
                 }
 
@@ -265,6 +269,10 @@ section {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+
+                            >svg {
+                                transition: all 1.5s;
+                            }
                         }
                     }
                 }

@@ -420,6 +420,22 @@
                             }
                         }
                     }
+
+                    &.dark {
+                        div.left {
+                            div.right-footer-card {
+                                >span {
+                                    &.beneficio {
+                                        color: rgba(0, 0, 0, 0.5);
+                                    }
+
+                                    &.inclusao {
+                                        color: #003DA6;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
