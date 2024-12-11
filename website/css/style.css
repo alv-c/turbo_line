@@ -547,13 +547,15 @@ section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna di
   font-size: 16px;
   font-weight: 400;
   line-height: 20.8px;
-  padding-bottom: 25px;
 }
 @media (min-width: 600px) {
   section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > span.validade-oferta {
     font-size: 18px;
     line-height: 23.4px;
   }
+}
+section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > span.validade-oferta:nth-child(3) {
+  padding-top: 10px;
 }
 section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > a.assinatura-card {
   display: flex;
@@ -566,6 +568,7 @@ section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna di
   background: #F58220;
   white-space: nowrap;
   text-decoration: none;
+  margin-top: 25px;
 }
 section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta > div.body-card > a.assinatura-card > div.ico {
   display: flex;
@@ -2546,13 +2549,15 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   font-size: 16px;
   font-weight: 400;
   line-height: 20.8px;
-  padding-bottom: 25px;
 }
 @media (min-width: 600px) {
   section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.body-card > span.validade-oferta {
     font-size: 18px;
     line-height: 23.4px;
   }
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.body-card > span.validade-oferta:nth-child(3) {
+  padding-top: 10px;
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.body-card > a.assinatura-card {
   display: flex;
@@ -2565,6 +2570,7 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   background: #F58220;
   white-space: nowrap;
   text-decoration: none;
+  margin-top: 25px;
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta > div.body-card > a.assinatura-card > div.ico {
   display: flex;

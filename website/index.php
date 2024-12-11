@@ -12,7 +12,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <!-- desktop -->
                     <img src="/website/img/index/banner_1.png" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
                     <!-- mobille -->
-                    <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
+                    <img src="/website/img/index/banner_1_mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
                 </a>
             </div>
             <div class="item">
@@ -20,7 +20,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <!-- desktop -->
                     <img src="/website/img/index/banner_2.png" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
                     <!-- mobille -->
-                    <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
+                    <img src="/website/img/index/banner_2_mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
                 </a>
             </div>
             <div class="item">
@@ -28,7 +28,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                     <!-- desktop -->
                     <img src="/website/img/index/banner_3.png" class="d-none d-md-block" alt="Turbo Line internet fibra óptica">
                     <!-- mobille -->
-                    <img src="/website/img/img-exemplo-mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
+                    <img src="/website/img/index/banner_3_mobille.png" class="d-block d-md-none" alt="Turbo Line internet fibra óptica">
                 </a>
             </div>
         </div>

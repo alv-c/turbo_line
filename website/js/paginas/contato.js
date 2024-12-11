@@ -1,8 +1,8 @@
 $(document).ready(function () {
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGlicmlkYXdlYiIsImEiOiJja284djMyMWwwd20yMm9wd3QzbTZvZnhrIn0.ro1ZJXeWhkK2bCRqOHcx_A';
 
-    var lat = -16.70462320664015;
-    var long = -49.26433650500866;
+    var lat = -16.77046440173481;
+    var long = -49.34237804272695;
 
     var map = new mapboxgl.Map({
         container: 'mapa', // container ID
