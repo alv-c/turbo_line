@@ -72,3 +72,7 @@ function getId(url) {
 /**
  * FIM MODAL VIDEO
  */
+
+
+// MASCARAS
+if($(".mask_tel").length) $(".mask_tel").mask("(99)99999-9999");

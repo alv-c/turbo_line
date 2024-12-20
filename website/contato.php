@@ -41,7 +41,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
             </div>
             <div class="right">
                 <fieldset>
-                    <form action="#" method="post">
+                    <form action="#" method="post" id="form-contato">
                         <div class="item">
                             <label for="nome">Nome</label>
                             <input type="text" name="nome" id="nome" class="form-contato" placeholder="Nome completo" required>
@@ -53,12 +53,12 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                             </div>
                             <div class="item">
                                 <label for="whatsapp">Whatsapp</label>
-                                <input type="text" name="whatsapp" id="whatsapp" class="form-contato" placeholder="(00) 98765-4321" required>
+                                <input type="text" name="whatsapp" id="whatsapp" class="form-contato mask_tel" placeholder="(00) 00000-0000" required>
                             </div>
                         </div>
                         <div class="item">
                             <label for="mensagem">Mensagem</label>
-                            <textarea name="mensagem" id="mensagem" class="form-contato" rows="3" placeholder="Fale um pouco sobre o que você está buscando..." required></textarea>
+                            <textarea name="mensagem" id="mensagem" class="form-contato" rows="3" placeholder="Fale um pouco sobre o que você está buscando..." required minlength="5" maxlength="500"></textarea>
                         </div>
                         <div class="item-check">
                             <div class="custom-control custom-checkbox mr-sm-2">
@@ -80,6 +80,38 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         <div id="mapa"></div>
     </div>
 </section>
+
+<script>
+    // Função para enviar os dados via WhatsApp
+    document.querySelector("form#form-contato").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const whatsapp = document.getElementById("whatsapp").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const aceiteTermos = document.getElementById("form-chck-termos").checked;
+        if (!aceiteTermos) {
+            alert("Você precisa aceitar os termos de uso para enviar o formulário.");
+            return;
+        }
+        const mensagemWhatsApp = `
+            Olá, meu nome é ${nome};
+            E-mail: ${email};
+            WhatsApp: ${whatsapp};
+            Mensagem: ${mensagem}
+        `;
+        const numeroWhatsApp = "556230943385";
+        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemWhatsApp)}`;
+        window.open(urlWhatsApp, "_blank");
+        document.getElementById("nome").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("whatsapp").value = "";
+        document.getElementById("mensagem").value = "";
+        document.getElementById("form-chck-termos").checked = false;
+    });
+</script>
+
+
 <?php
 require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
 ?>

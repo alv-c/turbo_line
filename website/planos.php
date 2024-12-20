@@ -389,7 +389,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                             </div>
                             <div class="right-footer-card">
                                 <span class="beneficio">
-                                    2 Ponto Wi-fi
+                                    2 Pontos Wi-fi
                                 </span>
                                 <span class="inclusao">
                                     Incluído

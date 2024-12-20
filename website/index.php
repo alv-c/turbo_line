@@ -422,7 +422,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                             </div>
                             <div class="right-footer-card">
                                 <span class="beneficio">
-                                    2 Ponto Wi-fi
+                                    2 Pontos Wi-fi
                                 </span>
                                 <span class="inclusao">
                                     Incluído
@@ -752,8 +752,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 <div class="bottom">
                     <span class="desc">
                         Experimente a verdadeira potência da internet. Nossa fibra óptica entrega até
-                        1Gbps de velocidade, oferecendo uma conexão estável para toda a família, sem
-                        quedas ou lentidão.
+                        1Gbps de velocidade, oferecendo uma conexão estável para toda a família, com o melhor índice de estabilidade.
                     </span>
                 </div>
             </div>
