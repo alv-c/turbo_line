@@ -16,15 +16,15 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </span>
         <div class="grid-btns">
             <div class="left">
-                <button type="button" class="btn-filtro active">Para você</button>
+                <button type="button" class="btn-filtro active" onclick="filterCards('pessoal', this)">Para você</button>
             </div>
             <div class="right">
-                <button type="button" class="btn-filtro">Para sua empresa</button>
+                <button type="button" class="btn-filtro" onclick="filterCards('empresa', this)">Para sua empresa</button>
             </div>
         </div>
         <div class="grid-cards">
-            <div class="coluna">
-                <div class="card-oferta">
+            <div class="coluna col-card-js">
+                <div class="card-oferta" data-plano="pessoal">
                     <div class="header-card">
                         <span class="subtitulo">
                             Turbo Fibra
@@ -84,8 +84,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 </div>
             </div>
 
-            <div class="coluna">
-                <div class="card-oferta oferta">
+            <div class="coluna col-card-js">
+                <div class="card-oferta oferta" data-plano="pessoal">
                     <div class="header-card">
                         <span class="subtitulo">
                             Turbo Fibra
@@ -149,8 +149,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 </div>
             </div>
 
-            <div class="coluna">
-                <div class="card-oferta mais-vendido">
+            <div class="coluna col-card-js">
+                <div class="card-oferta mais-vendido" data-plano="pessoal">
                     <div class="header-card">
                         <span class="subtitulo">
                             Turbo Fibra
@@ -244,8 +244,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 </div>
             </div>
 
-            <div class="coluna">
-                <div class="card-oferta mais-vendido">
+            <div class="coluna col-card-js">
+                <div class="card-oferta mais-vendido" data-plano="empresa">
                     <div class="header-card">
                         <span class="subtitulo">
                             Turbo Fibra
@@ -305,8 +305,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 </div>
             </div>
 
-            <div class="coluna">
-                <div class="card-oferta mais-vendido">
+            <div class="coluna col-card-js">
+                <div class="card-oferta mais-vendido" data-plano="empresa">
                     <div class="header-card">
                         <span class="subtitulo">
                             Turbo Fibra
@@ -385,7 +385,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                                     <g mask="url(#mask0_1939_1333)">
                                         <path d="M24.0001 32.7115C23.4347 32.7115 22.9568 32.5164 22.5663 32.126C22.176 31.7357 21.9808 31.2578 21.9808 30.6923C21.9808 30.127 22.176 29.6491 22.5663 29.2588C22.9568 28.8685 23.4347 28.6733 24.0001 28.6733C24.5654 28.6733 25.0433 28.8685 25.4338 29.2588C25.8242 29.6491 26.0193 30.127 26.0193 30.6923C26.0193 31.2578 25.8242 31.7357 25.4338 32.126C25.0433 32.5164 24.5654 32.7115 24.0001 32.7115ZM18.3501 27.35L16.7886 25.7578C17.7142 24.8321 18.792 24.1026 20.0218 23.5693C21.2518 23.036 22.5784 22.7693 24.0016 22.7693C25.4249 22.7693 26.751 23.0385 27.9798 23.577C29.2087 24.1155 30.2859 24.8527 31.2116 25.7885L29.6501 27.35C28.9167 26.6167 28.0667 26.0417 27.1001 25.625C26.1334 25.2084 25.1001 25 24.0001 25C22.9001 25 21.8667 25.2084 20.9001 25.625C19.9334 26.0417 19.0834 26.6167 18.3501 27.35ZM14.1001 23.1L12.5386 21.5385C14.0014 20.0552 15.7097 18.8895 17.6636 18.0415C19.6174 17.1934 21.7296 16.7693 24.0001 16.7693C26.2706 16.7693 28.3827 17.1934 30.3366 18.0415C32.2904 18.8895 33.9987 20.0552 35.4616 21.5385L33.9001 23.1C32.6167 21.8167 31.1292 20.8125 29.4376 20.0875C27.7459 19.3625 25.9334 19 24.0001 19C22.0667 19 20.2542 19.3625 18.5626 20.0875C16.8709 20.8125 15.3834 21.8167 14.1001 23.1Z" fill="red" />
                                     </g>
-                                </svg> 
+                                </svg>
                             </div>
                             <div class="right-footer-card">
                                 <span class="beneficio">
@@ -400,8 +400,8 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
                 </div>
             </div>
 
-            <div class="coluna">
-                <div class="card-oferta">
+            <div class="coluna col-card-js">
+                <div class="card-oferta" data-plano="empresa">
                     <div class="header-card">
                         <span class="subtitulo">
                             Turbo Fibra
@@ -463,6 +463,25 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
+
+<script>
+    function filterCards(plano, elementBtn) {
+        const colunas = document.querySelectorAll('.col-card-js');
+        const btns = document.querySelectorAll('button.btn-filtro');
+        btns.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        elementBtn.classList.add('active');
+        colunas.forEach(coluna => {
+            const card = coluna.querySelector('.card-oferta');
+            if (plano === '' || card.getAttribute('data-plano') === plano) {
+                coluna.classList.remove('hidden');
+            } else {
+                coluna.classList.add('hidden');
+            }
+        });
+    }
+</script>
 <?php
 require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
 ?>

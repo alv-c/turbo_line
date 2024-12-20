@@ -47,14 +47,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         <span class="subtitulo">
             Assine agora mesmo a internet banda larga e tenha internet com estabilidade e segurança
         </span>
-        <div class="contain-filtros-ofertas">
-            <button type="button" class="btn-filtro-ofertas">
-                Para você
-            </button>
-            <button type="button" class="btn-filtro-ofertas">
-                Para sua empresa
-            </button>
-        </div>
         <div class="contain-cards-ofertas">
             <div class="coluna">
                 <div class="card-oferta">

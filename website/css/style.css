@@ -329,46 +329,6 @@ section.ofertas-home > div.container > span.subtitulo {
     padding-bottom: 30px;
   }
 }
-section.ofertas-home > div.container > div.contain-filtros-ofertas {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 40px;
-}
-@media (min-width: 768px) {
-  section.ofertas-home > div.container > div.contain-filtros-ofertas {
-    flex-direction: row;
-    justify-content: center;
-    gap: 14px;
-    padding-bottom: 60px;
-  }
-}
-section.ofertas-home > div.container > div.contain-filtros-ofertas > button {
-  display: block;
-  width: 100%;
-  max-width: 260px;
-  white-space: nowrap;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 11px 10px 9px;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19.2px;
-  border-radius: 12px;
-}
-section.ofertas-home > div.container > div.contain-filtros-ofertas > button:nth-child(1) {
-  background: #003DA6;
-  color: #fff;
-}
-section.ofertas-home > div.container > div.contain-filtros-ofertas > button:nth-child(2) {
-  background: #E0E0E0;
-  color: #000;
-}
 section.ofertas-home > div.container > div.contain-cards-ofertas {
   display: flex;
   flex-direction: column;
@@ -377,6 +337,7 @@ section.ofertas-home > div.container > div.contain-cards-ofertas {
   flex-wrap: nowrap;
   gap: 40px;
   padding-bottom: 35px;
+  padding-top: 40px;
 }
 @media (min-width: 600px) {
   section.ofertas-home > div.container > div.contain-cards-ofertas {
@@ -388,6 +349,11 @@ section.ofertas-home > div.container > div.contain-cards-ofertas {
 @media (min-width: 992px) {
   section.ofertas-home > div.container > div.contain-cards-ofertas {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas {
+    padding-top: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -2388,6 +2354,9 @@ section.listagem-planos > div.container > div.grid-cards {
   section.listagem-planos > div.container > div.grid-cards {
     gap: 80px 40px;
   }
+}
+section.listagem-planos > div.container > div.grid-cards > div.coluna.hidden {
+  display: none;
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta {
   width: 100%;
