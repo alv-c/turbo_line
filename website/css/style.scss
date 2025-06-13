@@ -219,9 +219,9 @@ header {
                 }
 
                 >ul.navbar-nav {
-                    @media(max-width: 991.9px) {
-                        padding-bottom: 100dvh;
-                    }
+                    // @media(max-width: 991.9px) {
+                    //     padding-bottom: 100dvh;
+                    // }
 
                     @media(min-width: 1200px) {
                         gap: 15px;

@@ -371,7 +371,11 @@ section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna di
   position: relative;
   border-radius: 10px;
   margin: 0 auto;
-  opacity: 0;
+}
+@media (min-width: 1200px) {
+  section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta {
+    opacity: 0;
+  }
 }
 section.ofertas-home > div.container > div.contain-cards-ofertas > div.coluna div.card-oferta.oferta::after {
   content: "Oferta por tempo limitado";
@@ -750,13 +754,13 @@ section.ofertas-home > div.container > div.contain-ver-mais > button.btn-ver-mai
   transition: all 1.5s;
 }
 section.quem-somos-home {
-  background: url("/website/img/index/bg-azul-mobille.jpg") no-repeat center center;
+  background: url("/img/index/bg-azul-mobille.jpg") no-repeat center center;
   background-size: 100% 100%;
   padding: 45px 0 70px;
 }
 @media (min-width: 576px) {
   section.quem-somos-home {
-    background: url("/website/img/index/bg-azul-desktop.jpg") no-repeat center center;
+    background: url("/img/index/bg-azul-desktop.jpg") no-repeat center center;
     background-size: cover;
   }
 }
@@ -1205,13 +1209,13 @@ section.servicos-home > .container > div.bottom > div.grid-bottom > div.right > 
   object-fit: cover;
 }
 section.beneficios-home {
-  background: url("/website/img/index/bg-beneficios-mobille.png") no-repeat center center;
+  background: url("/img/index/bg-beneficios-mobille.png") no-repeat center center;
   background-size: 100% 100%;
   padding: 55px 0 50px;
 }
 @media (min-width: 576px) {
   section.beneficios-home {
-    background: url("/website/img/index/bg-beneficios-desktop.png") no-repeat center center;
+    background: url("/img/index/bg-beneficios-desktop.png") no-repeat center center;
     padding: 90px 0;
     background-size: cover;
   }
@@ -2097,7 +2101,7 @@ section.valores-institucional .container > div.grid > div.card-valores > div.bod
 }
 section.escolher-institucional {
   padding: 55px 0 90px;
-  background-image: url("/website/img/institucional/escolher-bg-mobille.png");
+  background-image: url("/img/institucional/escolher-bg-mobille.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -2105,7 +2109,7 @@ section.escolher-institucional {
 @media (min-width: 768px) {
   section.escolher-institucional {
     padding: 70px 0 75px;
-    background-image: url("/website/img/institucional/escolher-bg-desktop.png");
+    background-image: url("/img/institucional/escolher-bg-desktop.png");
   }
 }
 section.escolher-institucional > div.container > div.grid-top {
@@ -2217,7 +2221,7 @@ section.escolher-institucional > div.container > div.grid-cards > div.card-escol
 section.bg-planos {
   margin-top: 130px;
   padding: 30px 0 45px;
-  background: url("/website/img/planos/planos-bg.png") no-repeat center top;
+  background: url("/img/planos/planos-bg.png") no-repeat center top;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -2365,7 +2369,11 @@ section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-o
   position: relative;
   border-radius: 10px;
   margin: 0 auto;
-  opacity: 0;
+}
+@media (min-width: 1200px) {
+  section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta {
+    opacity: 0;
+  }
 }
 section.listagem-planos > div.container > div.grid-cards > div.coluna div.card-oferta.oferta::after {
   content: "Oferta por tempo limitado";
@@ -2721,7 +2729,7 @@ section.listagem-planos.animacao > div.container > div.grid-cards > div.coluna:n
 section.bg-contato {
   margin-top: 130px;
   padding: 30px 0 45px;
-  background: url("/website/img/contato/bg-contato.png") no-repeat center top;
+  background: url("/img/contato/bg-contato.png") no-repeat center top;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -2937,7 +2945,7 @@ section.mapa-contato .mapboxgl-marker:before {
   transform: translateX(-50%);
   width: 54px;
   height: 70px;
-  background-image: url("/website/img/contato/arrow_map.svg");
+  background-image: url("/img/contato/arrow_map.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3041,11 +3049,6 @@ header nav#navbar > .container > div#contain-nav-buttons::-webkit-scrollbar-thum
 }
 header nav#navbar > .container > div#contain-nav-buttons::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
-}
-@media (max-width: 991.9px) {
-  header nav#navbar > .container > div#contain-nav-buttons > ul.navbar-nav {
-    padding-bottom: 100dvh;
-  }
 }
 @media (min-width: 1200px) {
   header nav#navbar > .container > div#contain-nav-buttons > ul.navbar-nav {

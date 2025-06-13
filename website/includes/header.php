@@ -23,6 +23,19 @@
 
     <!-- MAPBOX -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- BOTAO WPP -->
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <a id="robbu-whatsapp-button" style="z-index: 100 !important;" target="_blank" href="https://api.whatsapp.com/send?phone=556230943385&text=Olá, gostaria de saber mais sobre os planos de internet da TurboLine!">
+        <div class="rwb-tooltip">Entrar em contato</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+
+    <?php
+    require_once './includes/GoogleAnalytics.php';
+    require_once './includes/FacebookPixel.php';
+    require_once './includes/GoogleRemarketing.php';
+    ?>
 </head>
 
 <body id="<?= $pagina ?>">

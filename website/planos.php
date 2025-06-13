@@ -1,7 +1,7 @@
 <?php
 $nomePrimarioTitulo = '';
 $pagina = 'planos';
-require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
+require_once './includes/header.php';
 ?>
 <section class="bg-planos">
     <div class="container">
@@ -483,5 +483,5 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
     }
 </script>
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
+require_once './includes/footer.php';
 ?>

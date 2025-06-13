@@ -86,14 +86,14 @@
                 <div class="contain-right">
                     <div class="coluna">
                         <span class="titulo-col">Árvore do site</span>
-                        <a href="./index.php" class="item-col">Home</a>
-                        <a href="./institucional.php" class="item-col">Institucional</a>
-                        <a href="./planos.php" class="item-col">Planos</a>
-                        <a href="./contato.php" class="item-col">Contato</a>
+                        <a href="./website/index.php" class="item-col">Home</a>
+                        <a href="./website/institucional.php" class="item-col">Institucional</a>
+                        <a href="./website/planos.php" class="item-col">Planos</a>
+                        <a href="./website/contato.php" class="item-col">Contato</a>
                     </div>
                     <div class="coluna">
                         <span class="titulo-col">Institucional</span>
-                        <a href="./institucional.php" class="item-col">Institucional</a>
+                        <a href="./website/institucional.php" class="item-col">Institucional</a>
                         <a href="https://wa.me/556230943385" class="item-col" target="_blank">Trabalhe conosco</a>
                         <!-- <a href="" class="item-col">Blog</a> -->
                     </div>
@@ -167,7 +167,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- MAPBOX -->
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
-        <script src="/website/js/scripts.js"></script>
+        <script src="/js/scripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
         <!-- OWL CAROUSEL JS -->

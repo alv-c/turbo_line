@@ -1,19 +1,19 @@
 $(document).ready(function () {
     switch (pagina) {
         case 'inicial':
-            $.getScript("/website/js/paginas/index.js");
+            $.getScript("/js/paginas/index.js");
             break;
 
         case 'Institucional':
-            $.getScript("/website/js/paginas/institucional.js");
+            $.getScript("/js/paginas/institucional.js");
             break;
 
         case 'contato':
-            $.getScript("/website/js/paginas/contato.js");
+            $.getScript("/js/paginas/contato.js");
             break;
 
         case 'planos':
-            $.getScript("/website/js/paginas/planos.js");
+            $.getScript("/js/paginas/planos.js");
             break;
             
     }

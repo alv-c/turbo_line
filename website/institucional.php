@@ -1,7 +1,7 @@
 <?php
 $nomePrimarioTitulo = '';
 $pagina = 'Institucional';
-require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
+require_once './includes/header.php';
 ?>
 
 <section class="media-institucional">
@@ -326,7 +326,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/header.php';
         </div>
     </div>
 </section>
-<?php require $_SERVER["DOCUMENT_ROOT"] . '/website/includes/modal_video.php'; ?>
+<?php require './includes/modal_video.php'; ?>
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/website/includes/footer.php';
+require_once './includes/footer.php';
 ?>
