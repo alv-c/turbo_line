@@ -8,9 +8,9 @@ $(document).ready(function () {
             $.getScript("/js/paginas/institucional.js");
             break;
 
-        case 'contato':
-            $.getScript("/js/paginas/contato.js");
-            break;
+        // case 'contato':
+        //     $.getScript("/js/paginas/contato.js");
+        //     break;
 
         case 'planos':
             $.getScript("/js/paginas/planos.js");

@@ -1,0 +1,269 @@
+section {
+    &.bg-contato {
+        margin-top: 130px;
+        padding: 30px 0 45px;
+        background: url('/website/img/contato/bg-contato.png') no-repeat center top;
+        background-size: cover;
+
+        @media(min-width: 768px) {
+            padding: 75px 0 80px;
+        }
+
+        @media(min-width: 992px) {
+            margin-top: 100px;
+        }
+
+        >div.container {
+            >span.titulo {
+                display: block;
+                position: relative;
+                text-align: center;
+                color: #FFF;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 15px;
+                    height: 5px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    &.form-contato {
+        background: #F7F8FA;
+        padding: 40px 0 70px;
+
+        @media(min-width: 768px) {
+            padding: 50px 0 45px;
+        }
+
+        >div.container {
+            >div.grid {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+
+                @media(min-width: 992px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: stretch;
+                }
+
+                @media(min-width: 992px) {
+                    gap: 55px;
+                }
+
+                >div {
+                    width: 100%;
+
+                    &.left {
+                        width: 100%;
+                        max-width: 435px;
+
+                        >span {
+                            display: block;
+                            color: #000;
+                            font-style: normal;
+
+                            &.titulo {
+                                font-size: 24px;
+                                line-height: 28.8px;
+                                padding-bottom: 20px;
+                                font-weight: 700;
+
+                                @media(min-width: 768px) {
+                                    font-size: 30px;
+                                    line-height: 36px;
+                                }
+                            }
+
+                            &.desc {
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 22.4px;
+                                padding-bottom: 20px;
+
+                                @media(min-width: 768px) {
+                                    font-size: 16px;
+                                    line-height: 25.6px;
+                                }
+                            }
+
+                            &.subtitulo {
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 25.6px;
+                                padding-bottom: 12px;
+                            }
+                        }
+
+                        >div.item-canal {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 8px;
+                            margin-bottom: 12px;
+
+                            >div.ico {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: relative;
+                                bottom: 1px;
+                            }
+
+                            >span {
+                                display: block;
+                                color: #000;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 25.6px;
+                            }
+                        }
+                    }
+
+                    &.right {
+                        >fieldset {
+                            border: none;
+                            margin: none;
+                            padding: none;
+
+                            >form {
+                                div.item {
+                                    width: 100%;
+
+                                    >label {
+                                        display: block;
+                                        padding-bottom: 10px;
+                                        margin: 0;
+                                        color: #000;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 22px;
+                                    }
+
+                                    input,
+                                    textarea {
+                                        &.form-contato {
+                                            display: block;
+                                            width: 100%;
+                                            padding: 15px 30px;
+                                            background: #fff;
+                                            border-radius: 8px;
+                                            border: 1px solid #DDD;
+                                            color: #707070;
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+                                            outline: none;
+                                        }
+                                    }
+                                }
+
+                                >div.grid-form {
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 20px;
+                                    margin: 20px 0;
+
+                                    @media (min-width: 768px) {
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: stretch;
+                                        margin: 12px 0;
+                                    }
+                                }
+
+                                >div.item-check {
+                                    margin: 25px 0;
+
+                                    >div.custom-control {
+                                        >label {
+                                            color: #000;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            cursor: pointer;
+                                        }
+
+                                        >input {
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+
+                                >button.submit-cntt {
+                                    display: block;
+                                    width: 100%;
+                                    padding: 12px 33px;
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    border-radius: 12px;
+                                    background: #003DA6;
+                                    color: #FFF;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.mapa-contato {
+        .mapboxgl-marker {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .mapboxgl-marker:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 54px;
+            height: 70px;
+            background-image: url('/website/img/contato/arrow_map.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .mapboxgl-marker svg {
+            opacity: 0;
+        }
+
+        >div.content-map {
+            height: 375px;
+
+            #mapa {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

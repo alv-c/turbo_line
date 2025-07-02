@@ -1,6 +1,7 @@
 <?php
 $nomePrimarioTitulo = '';
 $pagina = 'contato';
+// require_once $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 require_once './includes/header.php';
 ?>
 <section class="bg-contato">
@@ -40,136 +41,19 @@ require_once './includes/header.php';
                 </div>
             </div>
             <div class="right">
-                <fieldset>
-                    <form action="#" method="post" id="form-contato">
-                        <div class="item">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome" class="form-contato" placeholder="Nome completo" required>
-                        </div>
-                        <div class="grid-form">
-                            <div class="item">
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email" class="form-contato" placeholder="contato@exemplo.com" required>
-                            </div>
-                            <div class="item">
-                                <label for="whatsapp">Whatsapp</label>
-                                <input type="text" name="whatsapp" id="whatsapp" class="form-contato mask_tel" placeholder="(00) 00000-0000" required>
-                            </div>
-                        </div>
-                        <div class="grid-form">
-                            <div class="item">
-                                <label for="cep">CEP</label>
-                                <input type="text" name="cep" id="cep" class="form-contato" placeholder="00000-000" required>
-                            </div>
-                            <div class="item">
-                                <label for="numero_residencia">Número</label>
-                                <input type="text" name="numero_residencia" id="numero_residencia" class="form-contato" placeholder="Número da residência" required>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea name="mensagem" id="mensagem" class="form-contato" rows="3" placeholder="Fale um pouco sobre o que você está buscando..." required minlength="5" maxlength="500"></textarea>
-                        </div>
-                        <div class="item-check">
-                            <div class="custom-control custom-checkbox mr-sm-2">
-                                <input type="checkbox" name="aceite_termos" class="custom-control-input" id="form-chck-termos">
-                                <label class="custom-control-label" for="form-chck-termos">
-                                    Eu li e concordo com os termos de uso
-                                </label>
-                            </div>
-                        </div>
-                        <button type="submit" class="submit-cntt">Enviar agora</button>
-                    </form>
-                </fieldset>
+                <!-- COLUNA RIGHT     -->
+                <iframe
+                    src="http://localhost:4000/geodrexPro_TurboLine.php"
+                    frameborder="0"
+                    style="width: 100%; height: 1220px;">
+                </iframe>
+
             </div>
         </div>
     </div>
 </section>
-<section class="mapa-contato">
-    <div class="content-map">
-        <div id="mapa"></div>
-    </div>
-</section>
-
-<script>
-    // Função para enviar os dados via WhatsApp
-    // document.querySelector("form#form-contato").addEventListener("submit", function(event) {
-    //     event.preventDefault();
-    //     const nome = document.getElementById("nome").value;
-    //     const email = document.getElementById("email").value;
-    //     const whatsapp = document.getElementById("whatsapp").value;
-    //     const mensagem = document.getElementById("mensagem").value;
-    //     const aceiteTermos = document.getElementById("form-chck-termos").checked;
-    //     if (!aceiteTermos) {
-    //         alert("Você precisa aceitar os termos de uso para enviar o formulário.");
-    //         return;
-    //     }
-    //     const mensagemWhatsApp = `
-    //         Olá, meu nome é ${nome};
-    //         E-mail: ${email};
-    //         WhatsApp: ${whatsapp};
-    //         Mensagem: ${mensagem}
-    //     `;
-    //     const numeroWhatsApp = "556230943385";
-    //     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemWhatsApp)}`;
-    //     window.open(urlWhatsApp, "_blank");
-    //     document.getElementById("nome").value = "";
-    //     document.getElementById("email").value = "";
-    //     document.getElementById("whatsapp").value = "";
-    //     document.getElementById("mensagem").value = "";
-    //     document.getElementById("form-chck-termos").checked = false;
-    // });
-</script>
-
-<script>
-    document.querySelector("form#form-contato").addEventListener("submit", async function(event) {
-        event.preventDefault();
-
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("email").value;
-        const whatsapp = document.getElementById("whatsapp").value;
-        const mensagem = document.getElementById("mensagem").value;
-        const cep = document.getElementById("cep").value.replace(/\D/g, '');
-        const numeroResidencia = document.getElementById("numero_residencia").value;
-        const aceiteTermos = document.getElementById("form-chck-termos").checked;
-
-        if (!aceiteTermos) {
-            alert("Você precisa aceitar os termos de uso para enviar o formulário.");
-            return;
-        }
-
-        let enderecoCompleto = "Não foi possível obter o endereço.";
-
-        try {
-            // Consulta ao ViaCEP
-            const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-            const data = await response.json();
-            if (!data.erro) {
-                enderecoCompleto = `${data.logradouro}, ${numeroResidencia} - ${data.bairro}, ${data.localidade} - ${data.uf}, ${cep}`;
-            }
-        } catch (error) {
-            console.error("Erro ao consultar o endereço:", error);
-        }
-
-        const mensagemWhatsApp = `
-Olá, meu nome é ${nome};
-E-mail: ${email};
-WhatsApp: ${whatsapp};
-Mensagem: ${mensagem};
-Endereço: ${enderecoCompleto}
-    `;
-
-        const numeroWhatsApp = "556230943385";
-        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemWhatsApp)}`;
-        window.open(urlWhatsApp, "_blank");
-
-        // Limpa os campos
-        document.getElementById("form-contato").reset();
-    });
-</script>
-
-
 
 <?php
+// require_once $_SERVER["DOCUMENT_ROOT"] . '/includes/footer.php';
 require_once './includes/footer.php';
 ?>
