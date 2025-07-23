@@ -1,7 +1,6 @@
 <?php
 $nomePrimarioTitulo = '';
 $pagina = 'contato_geodrex';
-// require_once $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 require_once './includes/header.php';
 ?>
 <section class="bg-contato">
@@ -42,11 +41,9 @@ require_once './includes/header.php';
             </div>
             <div class="right">
                 <!-- COLUNA RIGHT     -->
-                <iframe
-                    src="http://localhost:4000/geodrexPro_TurboLine.php"
-                    frameborder="0"
-                    style="width: 100%; height: 1220px;">
-                </iframe>
+                <?php
+                    require_once './includes/iframe_drex_turbo.php';
+                ?>
 
             </div>
         </div>
